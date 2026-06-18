@@ -1,0 +1,330 @@
+{
+  "business": {
+    "name": "HDS Consultancy",
+    "tagline": "AI Marketing & Tech Consultancy",
+    "headline": "AI-Powered Marketing. Human Impact.",
+    "subtitle": "We combine AI, automation, cloud and creative digital strategy to help businesses build a stronger brand, launch better websites, automate operations and grow faster.",
+    "phone": "+60 12 291 9199",
+    "phonePlain": "60122919199",
+    "whatsapp": "60122919199",
+    "email": "mshemadarshini@gmail.com",
+    "location": "Rawang, Selangor, Malaysia",
+    "mapQuery": "Rawang Selangor Malaysia",
+    "mapEmbed": "https://www.google.com/maps?q=Rawang%20Selangor%20Malaysia&output=embed",
+    "socials": [
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/hemaraj/",
+        "icon": "in"
+      },
+      {
+        "name": "TikTok",
+        "url": "https://www.tiktok.com/@hd_talk",
+        "icon": "\u266a"
+      },
+      {
+        "name": "Facebook",
+        "url": "https://www.facebook.com/hematechhub",
+        "icon": "f"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/hema.techhub19/",
+        "icon": "ig"
+      },
+      {
+        "name": "Threads",
+        "url": "https://www.threads.com/@hema.techhub19",
+        "icon": "@"
+      }
+    ]
+  },
+  "portfolio": {
+    "label": "Impact Vault",
+    "eyebrow": "IMPACT VAULT",
+    "title": "Proof, Wins & Growth Signals",
+    "subtitle": "A sharper place for business results, campaign wins and measurable growth stories.",
+    "url": "#portfolio"
+  },
+  "stats": [
+    {
+      "value": "150+",
+      "label": "Projects Delivered"
+    },
+    {
+      "value": "98%",
+      "label": "Client Satisfaction"
+    },
+    {
+      "value": "5+",
+      "label": "Years Excellence"
+    }
+  ],
+  "heroMetrics": [
+    {
+      "position": "float-1",
+      "label": "Website Traffic",
+      "value": "2.8M",
+      "trend": "+24.6% vs last month"
+    },
+    {
+      "position": "float-2",
+      "label": "AI Campaigns",
+      "value": "4.6K",
+      "trend": "Conversions"
+    },
+    {
+      "position": "float-3",
+      "label": "Total Revenue",
+      "value": "2.43M",
+      "trend": "+18.9% vs last month"
+    },
+    {
+      "position": "float-4",
+      "label": "AI Chatbot",
+      "value": "Active",
+      "trend": "24/7"
+    }
+  ],
+  "services": [
+    {
+      "icon": "\ud83d\udcbb",
+      "title": "Website Design",
+      "category": "Web",
+      "description": "Modern responsive business websites with clean UI, SEO-ready structure and conversion-focused layout.",
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "icon": "\ud83c\udfa8",
+      "title": "Redesign & Customization",
+      "category": "Web",
+      "description": "Improve existing client websites with better visuals, speed, structure, content and user journey.",
+      "image": "https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "icon": "\ud83d\udce3",
+      "title": "Social Media Automation",
+      "category": "Automation",
+      "description": "Plan, automate and manage content workflows, lead capture, follow-ups and engagement campaigns.",
+      "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "icon": "\ud83e\udde9",
+      "title": "Custom Web Apps",
+      "category": "Development",
+      "description": "Build dashboards, portals, internal tools and business web applications tailored to operations.",
+      "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "icon": "\ud83d\udcf1",
+      "title": "Mobile Apps",
+      "category": "Development",
+      "description": "Design mobile-first experiences and app concepts for iOS, Android and cross-platform delivery.",
+      "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "icon": "\u2728",
+      "title": "Branding & Identity",
+      "category": "Brand",
+      "description": "Create digital brand positioning, visual direction, messaging and online presence for businesses.",
+      "image": "https://images.unsplash.com/photo-1600508774634-4e11d34730e2?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "icon": "\ud83d\udc65",
+      "title": "Outsourcing Tech Talent",
+      "category": "Talent",
+      "description": "Provide technical professionals for development, QA, automation, cloud, support and project work.",
+      "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "icon": "\ud83e\uddea",
+      "title": "Testing & QA",
+      "category": "Quality",
+      "description": "Test web and mobile apps through functional testing, regression, UAT support and defect reporting.",
+      "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "icon": "\u2601\ufe0f",
+      "title": "Cloud Integration",
+      "category": "Cloud",
+      "description": "Cloud setup, migration and integration across AWS, Azure and GCP with cost-conscious planning.",
+      "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "icon": "\ud83d\udcc8",
+      "title": "TradingView Pine Script",
+      "category": "Trading Tech",
+      "description": "Create custom TradingView indicators, strategies, alerts and backtesting logic for traders.",
+      "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "icon": "\u2699\ufe0f",
+      "title": "MT4 / MT5 EA Creation",
+      "category": "Trading Tech",
+      "description": "Build Expert Advisor concepts, automation logic and trading support tools for MT4 and MT5.",
+      "image": "https://images.unsplash.com/photo-1560221328-12fe60f83ab8?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "icon": "\ud83c\udf93",
+      "title": "Training & Workshops",
+      "category": "Training",
+      "description": "Online and offline training for individuals, teams and business owners on digital tools, AI and cloud.",
+      "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "icon": "\ud83d\udcac",
+      "title": "AI Chatbots & WhatsApp Automation",
+      "category": "Automation",
+      "description": "WhatsApp sales assistants, FAQ bots, lead qualification and customer support automation.",
+      "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "icon": "\ud83d\udd0e",
+      "title": "SEO & Analytics",
+      "category": "Marketing",
+      "description": "Improve visibility, track performance, build dashboards and report useful growth insights.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "icon": "\ud83d\udd0c",
+      "title": "API & Workflow Automation",
+      "category": "Automation",
+      "description": "Connect forms, CRM, spreadsheets, databases and apps into smoother automated workflows.",
+      "image": "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "icon": "\ud83d\udee0\ufe0f",
+      "title": "Maintenance & Support",
+      "category": "Support",
+      "description": "Keep websites, apps and automation flows secure, updated, optimized and reliable.",
+      "image": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "icon": "\ud83d\uded2",
+      "title": "E-commerce & Landing Pages",
+      "category": "Web",
+      "description": "Build sales pages, landing pages and simple online store experiences designed to convert.",
+      "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "icon": "\ud83e\udded",
+      "title": "Digital Consulting",
+      "category": "Strategy",
+      "description": "Discovery, roadmap planning and practical consulting to choose the right digital solution.",
+      "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80"
+    }
+  ],
+  "caseStudies": [
+    {
+      "title": "E-commerce Growth",
+      "metric": "+156%",
+      "label": "Revenue Growth",
+      "period": "6 months"
+    },
+    {
+      "title": "SaaS Platform",
+      "metric": "+92%",
+      "label": "User Signups",
+      "period": "4 months"
+    },
+    {
+      "title": "Local Business",
+      "metric": "+210%",
+      "label": "Leads Generated",
+      "period": "3 months"
+    },
+    {
+      "title": "FinTech Startup",
+      "metric": "-60%",
+      "label": "Cost Per Acquisition",
+      "period": "5 months"
+    }
+  ],
+  "careers": {
+    "headline": "Join Our Team",
+    "intro": "Build your career with a practical, creative and AI-driven team delivering digital solutions for real businesses.",
+    "benefits": [
+      "Great Culture",
+      "Growth Opportunities",
+      "Learning & Development",
+      "Work That Matters"
+    ],
+    "roles": [
+      "AI Marketing Strategist",
+      "UI/UX Designer",
+      "Full Stack Developer",
+      "SEO Specialist",
+      "QA Tester",
+      "Cloud / DevOps Engineer"
+    ]
+  },
+  "booking": {
+    "headline": "Let's Build Something Amazing Together",
+    "subtext": "Schedule a consultation and let\u2019s discuss how HDS Consultancy can help your business grow.",
+    "calendarLink": "https://calendar.google.com/calendar/appointments/schedules/",
+    "attachmentLimitMB": 5,
+    "note": "Google Calendar availability can be connected using your Google Appointment Schedule link or Calendar API. This demo includes a frontend calendar picker and WhatsApp submission."
+  },
+  "clientWebDesign": {
+    "label": "Client Web Design",
+    "eyebrow": "CLIENT WEB DESIGN",
+    "headline": "Client Website Design Showcase",
+    "subtext": "Choose a saved client landing page. If a live URL is added in data.json, the same link redirects visitors to the external website automatically.",
+    "projects": [
+      {
+        "id": "spa",
+        "name": "Serenity Spa",
+        "type": "Spa & Wellness Website",
+        "status": "Live website",
+        "image": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1200&q=80",
+        "localPage": "",
+        "liveUrl": "https://serenityspa.mindzlabz.com",
+        "summary": "Spa client design redirects to the live Serenity Spa website domain.",
+        "highlights": [
+          "Redirects to live Serenity Spa website",
+          "No local client_spa folder required",
+          "Domain managed from data.json",
+          "Update liveUrl anytime the domain changes"
+        ]
+      },
+      {
+        "id": "barber-shop",
+        "name": "Barber Shop",
+        "type": "Barber Shop Website",
+        "status": "Live website",
+        "image": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&q=80",
+        "localPage": "",
+        "liveUrl": "https://barber.mindzlabz.com",
+        "summary": "Barber shop client design redirects to the live Barber Shop website domain.",
+        "highlights": [
+          "Redirects to live Barber Shop website",
+          "No local client folder required",
+          "Managed from data.json",
+          "Update liveUrl anytime the domain changes"
+        ]
+      },
+      {
+        "id": "tk-lorry-logistic",
+        "name": "TK Lorry Logistic",
+        "type": "Logistics Website",
+        "status": "Live website",
+        "image": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1200&q=80",
+        "localPage": "",
+        "liveUrl": "https://tklogistic.mindzlabz.com/",
+        "summary": "Logistics client design redirects to the live TK Lorry Logistic website domain.",
+        "highlights": [
+          "Redirects to live TK Lorry Logistic website",
+          "No local client folder required",
+          "Managed from data.json",
+          "Update liveUrl anytime the domain changes"
+        ]
+      }
+    ],
+    "routingGuide": {
+      "howItWorks": "If liveUrl is filled, the client menu redirects to that live website. If liveUrl is empty, add a localPage path to a saved landing page folder.",
+      "whereToPlaceLocalLandingPages": "Create a folder directly under /Users/mshema/Downloads/hds2/ for each client and put that client landing page index.html inside it. Example: /Users/mshema/Downloads/hds2/client_spa/index.html",
+      "localPageExample": "client_spa/index.html",
+      "liveUrlExample": "https://client-domain.com/"
+    }
+  }
+}
