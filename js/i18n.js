@@ -1,0 +1,552 @@
+(() => {
+  const STORAGE_KEY = 'hds-language';
+  const supportedLanguages = ['en', 'ms', 'zh', 'ta'];
+  const languageMeta = {
+    en: { label: 'EN', htmlLang: 'en' },
+    ms: { label: 'MS', htmlLang: 'ms' },
+    zh: { label: '中文', htmlLang: 'zh-CN' },
+    ta: { label: 'TA', htmlLang: 'ta' }
+  };
+  const dictionaries = {
+  "ms": {
+    "Home": "Utama",
+    "Services": "Servis",
+    "Service Categories": "Kategori Servis",
+    "Packages": "Pakej",
+    "Growth Engine": "Enjin Pertumbuhan",
+    "Solutions": "Solusi",
+    "Client Work": "Portfolio",
+    "Shop": "Kedai",
+    "About": "Tentang",
+    "Contact": "Kontak",
+    "Careers": "Kerjaya",
+    "Book a Call": "Tempah",
+    "Get Free Consultation": "Dapatkan Konsultasi Percuma",
+    "Book a Free Consultation": "Tempah Konsultasi Percuma",
+    "WhatsApp Us": "WhatsApp Kami",
+    "All Services": "Semua Servis",
+    "Shop Packages": "Pakej Kedai",
+    "About Us": "Tentang Kami",
+    "Impact Vault": "Bukti Impak",
+    "Company": "Syarikat",
+    "Currency": "Mata Wang",
+    "Build Your Website,": "Bina Laman Web Anda,",
+    "Automate Your": "Automasi",
+    "Business &": "Perniagaan Anda &",
+    "Get More Customers": "Dapatkan Lebih Ramai Pelanggan",
+    "We help SMEs grow with smart websites, WhatsApp automation, AI agents & business dashboards.": "Kami membantu PKS berkembang dengan laman web pintar, automasi WhatsApp, ejen AI dan papan pemuka perniagaan.",
+    "Years Experience": "Tahun Pengalaman",
+    "Projects Delivered": "Projek Disiapkan",
+    "Support Response": "Respons Sokongan",
+    "Client Rating": "Penilaian Pelanggan",
+    "Trusted By Businesses Across Malaysia": "Dipercayai Oleh Perniagaan Di Seluruh Malaysia",
+    "Website Development": "Pembangunan Laman Web",
+    "WhatsApp Automation": "Automasi WhatsApp",
+    "AI Sales Assistant": "Pembantu Jualan AI",
+    "Dashboard & Analytics": "Papan Pemuka & Analitik",
+    "Cloud Solutions": "Penyelesaian Awan",
+    "We Help You Attract, Engage, Automate & Grow": "Kami Bantu Anda Menarik, Berinteraksi, Automasi & Berkembang",
+    "From social media to sales dashboard — we turn visitors into loyal customers.": "Daripada media sosial hingga papan pemuka jualan, kami menukar pelawat menjadi pelanggan setia.",
+    "Social Media Marketing": "Pemasaran Media Sosial",
+    "TikTok, Meta & Content": "TikTok, Meta & Kandungan",
+    "WhatsApp Marketing": "Pemasaran WhatsApp",
+    "Broadcast & Automate": "Siaran & Automasi",
+    "Website Design": "Reka Bentuk Laman Web",
+    "Build & Redesign": "Bina & Reka Semula",
+    "AI Automation": "Automasi AI",
+    "Smart Workflows": "Aliran Kerja Pintar",
+    "Sales Dashboard": "Papan Pemuka Jualan",
+    "Track & Grow Sales": "Jejak & Tingkatkan Jualan",
+    "SERVICE CATEGORIES": "KATEGORI SERVIS",
+    "Our Service Categories": "Kategori Servis Kami",
+    "Complete digital solutions to grow your business faster.": "Penyelesaian digital lengkap untuk mempercepat pertumbuhan perniagaan anda.",
+    "View All Services →": "Lihat Semua Servis →",
+    "Explore →": "Teroka →",
+    "Web & App Development": "Pembangunan Web & Aplikasi",
+    "Websites, web apps, mobile apps and custom solutions.": "Laman web, aplikasi web, aplikasi mudah alih dan penyelesaian tersuai.",
+    "Marketing & Growth": "Pemasaran & Pertumbuhan",
+    "Social media, ads, content and SEO to grow your brand.": "Media sosial, iklan, kandungan dan SEO untuk membesarkan jenama anda.",
+    "Automation & AI": "Automasi & AI",
+    "WhatsApp automation, AI chatbots and workflow automation.": "Automasi WhatsApp, chatbot AI dan automasi aliran kerja.",
+    "Data & Analytics": "Data & Analitik",
+    "Dashboards, reporting and analytics for business insights.": "Papan pemuka, laporan dan analitik untuk pandangan perniagaan.",
+    "Cloud & DevOps": "Awan & DevOps",
+    "Cloud setup, migration and integration on AWS, Azure & GCP.": "Persediaan, migrasi dan integrasi awan di AWS, Azure & GCP.",
+    "Testing & Quality": "Ujian & Kualiti",
+    "QA testing, performance and quality assurance solutions.": "Ujian QA, prestasi dan penyelesaian jaminan kualiti.",
+    "Design & Branding": "Reka Bentuk & Penjenamaan",
+    "Brand identity, UI/UX design and creative services.": "Identiti jenama, reka bentuk UI/UX dan servis kreatif.",
+    "Training & Consulting": "Latihan & Perundingan",
+    "Training, workshops and digital transformation consulting.": "Latihan, bengkel dan perundingan transformasi digital.",
+    "OUR PROVEN PROCESS": "PROSES TERBUKTI KAMI",
+    "The Complete": "Lengkap",
+    "For Your Business": "Untuk Perniagaan Anda",
+    "We connect the dots from marketing to automation and turn data into growth.": "Kami menghubungkan pemasaran kepada automasi dan menukar data kepada pertumbuhan.",
+    "Social Media Ads": "Iklan Media Sosial",
+    "Attract the right audience and increase engagement.": "Tarik audiens yang tepat dan tingkatkan interaksi.",
+    "Website / Landing Page": "Laman Web / Landing Page",
+    "Capture leads with high-converting pages and forms.": "Tangkap prospek dengan halaman dan borang yang berkesan.",
+    "Nurture leads, automate replies and qualify customers.": "Jaga prospek, automasi balasan dan tapis pelanggan.",
+    "Track performance, monitor results and make smarter decisions.": "Jejak prestasi, pantau keputusan dan buat keputusan lebih bijak.",
+    "Repeat Customers": "Pelanggan Berulang",
+    "Create follow-ups and retain customers for loyal sales.": "Bina susulan dan kekalkan pelanggan untuk jualan setia.",
+    "AI-Powered Solutions": "Penyelesaian Berkuasa AI",
+    "Smarter automation for better results.": "Automasi lebih pintar untuk hasil lebih baik.",
+    "Secure & Reliable": "Selamat & Dipercayai",
+    "Your data and systems are safe with us.": "Data dan sistem anda selamat bersama kami.",
+    "Custom & Scalable": "Tersuai & Boleh Diskala",
+    "Solutions built for your business growth.": "Penyelesaian dibina untuk pertumbuhan perniagaan anda.",
+    "Ready to Grow Your Business?": "Sedia Untuk Kembangkan Perniagaan Anda?",
+    "Let’s build your digital success story together.": "Mari bina kisah kejayaan digital anda bersama.",
+    "WHY CHOOSE HDS CONSULTANCY": "KENAPA PILIH HDS CONSULTANCY",
+    "Smart Solutions.": "Penyelesaian Pintar.",
+    "Real Results.": "Hasil Nyata.",
+    "AI-Powered": "Berkuasa AI",
+    "Data-Driven": "Berpandukan Data",
+    "Transparent": "Telus",
+    "Results-Focused": "Fokus Hasil",
+    "Learn More About Us →": "Ketahui Lebih Lanjut →",
+    "Proof, Wins &": "Bukti, Kejayaan &",
+    "Growth Signals": "Isyarat Pertumbuhan",
+    "OUR LOCATION": "LOKASI KAMI",
+    "Visit Us in Rawang": "Lawati Kami di Rawang",
+    "Get Directions": "Dapatkan Arah",
+    "BOOK A CALL": "TEMPAH PANGGILAN",
+    "Let's Build Something Amazing Together": "Mari Bina Sesuatu Yang Hebat Bersama",
+    "Name": "Nama",
+    "Phone": "Telefon",
+    "Email": "E-mel",
+    "Service": "Servis",
+    "Query / Details": "Pertanyaan / Butiran",
+    "Submit to WhatsApp →": "Hantar ke WhatsApp →",
+    "SHOP SERVICES": "SERVIS KEDAI",
+    "Packages & Services": "Pakej & Servis",
+    "Choose the right solution or package for your business needs.": "Pilih penyelesaian atau pakej yang sesuai untuk keperluan perniagaan anda.",
+    "Web & Development": "Web & Pembangunan",
+    "Managed Services": "Servis Terurus",
+    "Bundles": "Pakej Gabungan",
+    "Most Popular Packages": "Pakej Paling Popular",
+    "Choose Package": "Pilih Pakej",
+    "Request Quote": "Minta Sebut Harga",
+    "Choose": "Pilih",
+    "View All Services": "Lihat Semua Servis",
+    "100% Secure": "100% Selamat",
+    "Safe & trusted payment": "Pembayaran selamat & dipercayai",
+    "Fast Delivery": "Penghantaran Pantas",
+    "On-time project delivery": "Penghantaran projek tepat masa",
+    "Free Consultation": "Konsultasi Percuma",
+    "Expert advice for you": "Nasihat pakar untuk anda",
+    "Support 24/7": "Sokongan 24/7",
+    "We are here to help": "Kami sedia membantu",
+    "Join Our": "Sertai",
+    "Team": "Pasukan Kami",
+    "Send Career Request": "Hantar Permohonan Kerjaya",
+    "Full Name": "Nama Penuh",
+    "Role Interested In": "Jawatan Diminati",
+    "Select a role": "Pilih jawatan",
+    "Portfolio / LinkedIn": "Portfolio / LinkedIn",
+    "Short Message": "Mesej Ringkas",
+    "Resume / CV": "Resume / CV",
+    "Send to WhatsApp →": "Hantar ke WhatsApp →",
+    "Add Packages": "Tambah Pakej",
+    "Selected Packages": "Pakej Dipilih",
+    "Total": "Jumlah",
+    "Back to Home ->": "Kembali ke Laman Utama ->"
+  },
+  "zh": {
+    "Home": "首页",
+    "Services": "服务",
+    "Service Categories": "服务类别",
+    "Packages": "配套",
+    "Growth Engine": "增长引擎",
+    "Solutions": "解决方案",
+    "Client Work": "客户案例",
+    "Shop": "商店",
+    "About": "关于我们",
+    "Contact": "联系",
+    "Careers": "招聘",
+    "Book a Call": "预约通话",
+    "Get Free Consultation": "免费咨询",
+    "Book a Free Consultation": "预约免费咨询",
+    "WhatsApp Us": "WhatsApp 联系我们",
+    "All Services": "全部服务",
+    "Shop Packages": "商店配套",
+    "About Us": "关于我们",
+    "Impact Vault": "成果案例",
+    "Company": "公司",
+    "Currency": "货币",
+    "Build Your Website,": "建立您的网站，",
+    "Automate Your": "自动化您的",
+    "Business &": "业务并",
+    "Get More Customers": "获得更多客户",
+    "We help SMEs grow with smart websites, WhatsApp automation, AI agents & business dashboards.": "我们通过智能网站、WhatsApp 自动化、AI 助理和业务仪表板帮助中小企业成长。",
+    "Years Experience": "年经验",
+    "Projects Delivered": "已交付项目",
+    "Support Response": "支持响应",
+    "Client Rating": "客户评分",
+    "Trusted By Businesses Across Malaysia": "获得马来西亚企业信赖",
+    "Website Development": "网站开发",
+    "WhatsApp Automation": "WhatsApp 自动化",
+    "AI Sales Assistant": "AI 销售助理",
+    "Dashboard & Analytics": "仪表板与分析",
+    "Cloud Solutions": "云解决方案",
+    "We Help You Attract, Engage, Automate & Grow": "我们帮助您吸引、互动、自动化并成长",
+    "From social media to sales dashboard — we turn visitors into loyal customers.": "从社交媒体到销售仪表板，我们把访客转化为忠诚客户。",
+    "Social Media Marketing": "社交媒体营销",
+    "TikTok, Meta & Content": "TikTok、Meta 与内容",
+    "WhatsApp Marketing": "WhatsApp 营销",
+    "Broadcast & Automate": "群发与自动化",
+    "Website Design": "网站设计",
+    "Build & Redesign": "建立与改版",
+    "AI Automation": "AI 自动化",
+    "Smart Workflows": "智能流程",
+    "Sales Dashboard": "销售仪表板",
+    "Track & Grow Sales": "追踪并提升销售",
+    "SERVICE CATEGORIES": "服务类别",
+    "Our Service Categories": "我们的服务类别",
+    "Complete digital solutions to grow your business faster.": "完整数字解决方案，帮助业务更快成长。",
+    "View All Services →": "查看全部服务 →",
+    "Explore →": "探索 →",
+    "Web & App Development": "网站与应用开发",
+    "Websites, web apps, mobile apps and custom solutions.": "网站、网页应用、移动应用和定制解决方案。",
+    "Marketing & Growth": "营销与增长",
+    "Social media, ads, content and SEO to grow your brand.": "通过社交媒体、广告、内容和 SEO 建立品牌。",
+    "Automation & AI": "自动化与 AI",
+    "WhatsApp automation, AI chatbots and workflow automation.": "WhatsApp 自动化、AI 聊天机器人和流程自动化。",
+    "Data & Analytics": "数据与分析",
+    "Dashboards, reporting and analytics for business insights.": "仪表板、报告和分析，提供业务洞察。",
+    "Cloud & DevOps": "云与 DevOps",
+    "Cloud setup, migration and integration on AWS, Azure & GCP.": "AWS、Azure 与 GCP 的云设置、迁移和集成。",
+    "Testing & Quality": "测试与质量",
+    "QA testing, performance and quality assurance solutions.": "QA 测试、性能与质量保证解决方案。",
+    "Design & Branding": "设计与品牌",
+    "Brand identity, UI/UX design and creative services.": "品牌识别、UI/UX 设计和创意服务。",
+    "Training & Consulting": "培训与咨询",
+    "Training, workshops and digital transformation consulting.": "培训、工作坊和数字化转型咨询。",
+    "OUR PROVEN PROCESS": "我们的验证流程",
+    "The Complete": "完整",
+    "For Your Business": "适合您的业务",
+    "We connect the dots from marketing to automation and turn data into growth.": "我们连接营销与自动化，把数据转化为增长。",
+    "Social Media Ads": "社交媒体广告",
+    "Attract the right audience and increase engagement.": "吸引正确受众并提升互动。",
+    "Website / Landing Page": "网站 / 落地页",
+    "Capture leads with high-converting pages and forms.": "通过高转化页面和表单获取潜在客户。",
+    "Nurture leads, automate replies and qualify customers.": "培育潜在客户、自动回复并筛选客户。",
+    "Track performance, monitor results and make smarter decisions.": "追踪表现、监控结果并做出更聪明的决策。",
+    "Repeat Customers": "回头客",
+    "Create follow-ups and retain customers for loyal sales.": "建立跟进流程并留住忠诚客户。",
+    "AI-Powered Solutions": "AI 驱动方案",
+    "Smarter automation for better results.": "更智能的自动化，带来更好成果。",
+    "Secure & Reliable": "安全可靠",
+    "Your data and systems are safe with us.": "您的数据和系统由我们安全守护。",
+    "Custom & Scalable": "定制且可扩展",
+    "Solutions built for your business growth.": "为业务增长而打造的解决方案。",
+    "Ready to Grow Your Business?": "准备好发展您的业务了吗？",
+    "Let’s build your digital success story together.": "让我们一起打造您的数字成功故事。",
+    "WHY CHOOSE HDS CONSULTANCY": "为什么选择 HDS CONSULTANCY",
+    "Smart Solutions.": "智能解决方案。",
+    "Real Results.": "真实成果。",
+    "AI-Powered": "AI 驱动",
+    "Data-Driven": "数据驱动",
+    "Transparent": "透明",
+    "Results-Focused": "结果导向",
+    "Learn More About Us →": "了解更多 →",
+    "Proof, Wins &": "证明、成果与",
+    "Growth Signals": "增长信号",
+    "OUR LOCATION": "我们的位置",
+    "Visit Us in Rawang": "到访 Rawang",
+    "Get Directions": "获取路线",
+    "BOOK A CALL": "预约通话",
+    "Let's Build Something Amazing Together": "让我们一起打造精彩成果",
+    "Name": "姓名",
+    "Phone": "电话",
+    "Email": "电邮",
+    "Service": "服务",
+    "Query / Details": "咨询 / 详情",
+    "Submit to WhatsApp →": "发送到 WhatsApp →",
+    "SHOP SERVICES": "商店服务",
+    "Packages & Services": "配套与服务",
+    "Choose the right solution or package for your business needs.": "为您的业务需求选择合适的方案或配套。",
+    "Web & Development": "网站与开发",
+    "Managed Services": "托管服务",
+    "Bundles": "组合配套",
+    "Most Popular Packages": "热门配套",
+    "Choose Package": "选择配套",
+    "Request Quote": "索取报价",
+    "Choose": "选择",
+    "View All Services": "查看全部服务",
+    "100% Secure": "100% 安全",
+    "Safe & trusted payment": "安全可信付款",
+    "Fast Delivery": "快速交付",
+    "On-time project delivery": "准时交付项目",
+    "Free Consultation": "免费咨询",
+    "Expert advice for you": "为您提供专家建议",
+    "Support 24/7": "24/7 支持",
+    "We are here to help": "我们随时协助",
+    "Join Our": "加入我们的",
+    "Team": "团队",
+    "Send Career Request": "发送求职申请",
+    "Full Name": "全名",
+    "Role Interested In": "有兴趣的职位",
+    "Select a role": "选择职位",
+    "Portfolio / LinkedIn": "作品集 / LinkedIn",
+    "Short Message": "简短信息",
+    "Resume / CV": "简历 / CV",
+    "Send to WhatsApp →": "发送到 WhatsApp →",
+    "Add Packages": "添加配套",
+    "Selected Packages": "已选配套",
+    "Total": "总计",
+    "Back to Home ->": "返回首页 ->"
+  },
+  "ta": {
+    "Home": "முகப்பு",
+    "Services": "சேவைகள்",
+    "Service Categories": "சேவை வகைகள்",
+    "Packages": "தொகுப்புகள்",
+    "Growth Engine": "வளர்ச்சி இயந்திரம்",
+    "Solutions": "தீர்வுகள்",
+    "Client Work": "பணிகள்",
+    "Shop": "கடை",
+    "About": "எங்களை பற்றி",
+    "Contact": "தொடர்பு",
+    "Careers": "வேலைவாய்ப்பு",
+    "Book a Call": "அழைப்பு",
+    "Get Free Consultation": "இலவச ஆலோசனை",
+    "Book a Free Consultation": "இலவச ஆலோசனை பதிவு",
+    "WhatsApp Us": "WhatsApp செய்யவும்",
+    "All Services": "அனைத்து சேவைகள்",
+    "Shop Packages": "கடை தொகுப்புகள்",
+    "About Us": "எங்களை பற்றி",
+    "Impact Vault": "விளைவு பதிவகம்",
+    "Company": "நிறுவனம்",
+    "Currency": "நாணயம்",
+    "Build Your Website,": "உங்கள் இணையதளத்தை உருவாக்குங்கள்,",
+    "Automate Your": "உங்கள்",
+    "Business &": "வணிகத்தை தானியக்கி",
+    "Get More Customers": "மேலும் வாடிக்கையாளர்களை பெறுங்கள்",
+    "We help SMEs grow with smart websites, WhatsApp automation, AI agents & business dashboards.": "ஸ்மார்ட் இணையதளங்கள், WhatsApp தானியக்கம், AI முகவர்கள் மற்றும் வணிக டாஷ்போர்ட்களுடன் SME வளர்ச்சிக்கு உதவுகிறோம்.",
+    "Years Experience": "ஆண்டு அனுபவம்",
+    "Projects Delivered": "முடிக்கப்பட்ட திட்டங்கள்",
+    "Support Response": "ஆதரவு பதில்",
+    "Client Rating": "வாடிக்கையாளர் மதிப்பீடு",
+    "Trusted By Businesses Across Malaysia": "மலேசியா முழுவதும் வணிகங்களின் நம்பிக்கை",
+    "Website Development": "இணையதள மேம்பாடு",
+    "WhatsApp Automation": "WhatsApp தானியக்கம்",
+    "AI Sales Assistant": "AI விற்பனை உதவியாளர்",
+    "Dashboard & Analytics": "டாஷ்போர்டு & பகுப்பாய்வு",
+    "Cloud Solutions": "கிளவுட் தீர்வுகள்",
+    "We Help You Attract, Engage, Automate & Grow": "நாங்கள் ஈர்க்க, இணைக்க, தானியக்க மற்றும் வளர உதவுகிறோம்",
+    "From social media to sales dashboard — we turn visitors into loyal customers.": "சமூக ஊடகத்திலிருந்து விற்பனை டாஷ்போர்டு வரை, பார்வையாளர்களை நம்பகமான வாடிக்கையாளர்களாக்குகிறோம்.",
+    "Social Media Marketing": "சமூக ஊடக மார்க்கெட்டிங்",
+    "TikTok, Meta & Content": "TikTok, Meta & உள்ளடக்கம்",
+    "WhatsApp Marketing": "WhatsApp மார்க்கெட்டிங்",
+    "Broadcast & Automate": "பரப்பு & தானியக்கு",
+    "Website Design": "இணையதள வடிவமைப்பு",
+    "Build & Redesign": "உருவாக்கம் & மறுவடிவமைப்பு",
+    "AI Automation": "AI தானியக்கம்",
+    "Smart Workflows": "ஸ்மார்ட் பணிச்சூழல்கள்",
+    "Sales Dashboard": "விற்பனை டாஷ்போர்டு",
+    "Track & Grow Sales": "விற்பனையை கண்காணித்து வளர்த்து",
+    "SERVICE CATEGORIES": "சேவை வகைகள்",
+    "Our Service Categories": "எங்கள் சேவை வகைகள்",
+    "Complete digital solutions to grow your business faster.": "உங்கள் வணிகத்தை வேகமாக வளர்க்க முழுமையான டிஜிட்டல் தீர்வுகள்.",
+    "View All Services →": "அனைத்து சேவைகளையும் பார்க்க →",
+    "Explore →": "ஆராய்க →",
+    "Web & App Development": "வெப் & ஆப் மேம்பாடு",
+    "Websites, web apps, mobile apps and custom solutions.": "இணையதளங்கள், வெப் ஆப்கள், மொபைல் ஆப்கள் மற்றும் தனிப்பயன் தீர்வுகள்.",
+    "Marketing & Growth": "மார்க்கெட்டிங் & வளர்ச்சி",
+    "Social media, ads, content and SEO to grow your brand.": "உங்கள் பிராண்டை வளர்க்க சமூக ஊடகம், விளம்பரங்கள், உள்ளடக்கம் மற்றும் SEO.",
+    "Automation & AI": "தானியக்கம் & AI",
+    "WhatsApp automation, AI chatbots and workflow automation.": "WhatsApp தானியக்கம், AI chatbot மற்றும் workflow தானியக்கம்.",
+    "Data & Analytics": "தரவு & பகுப்பாய்வு",
+    "Dashboards, reporting and analytics for business insights.": "வணிக புரிதலுக்கான டாஷ்போர்டுகள், அறிக்கைகள் மற்றும் பகுப்பாய்வு.",
+    "Cloud & DevOps": "கிளவுட் & DevOps",
+    "Cloud setup, migration and integration on AWS, Azure & GCP.": "AWS, Azure & GCP இல் கிளவுட் அமைப்பு, மாற்றம் மற்றும் இணைப்பு.",
+    "Testing & Quality": "சோதனை & தரம்",
+    "QA testing, performance and quality assurance solutions.": "QA சோதனை, செயல்திறன் மற்றும் தர உறுதி தீர்வுகள்.",
+    "Design & Branding": "வடிவமைப்பு & பிராண்டிங்",
+    "Brand identity, UI/UX design and creative services.": "பிராண்ட் அடையாளம், UI/UX வடிவமைப்பு மற்றும் படைப்பாற்றல் சேவைகள்.",
+    "Training & Consulting": "பயிற்சி & ஆலோசனை",
+    "Training, workshops and digital transformation consulting.": "பயிற்சி, பணிமனைகள் மற்றும் டிஜிட்டல் மாற்ற ஆலோசனை.",
+    "OUR PROVEN PROCESS": "எங்கள் நிரூபிக்கப்பட்ட செயல்முறை",
+    "The Complete": "முழுமையான",
+    "For Your Business": "உங்கள் வணிகத்திற்காக",
+    "We connect the dots from marketing to automation and turn data into growth.": "மார்க்கெட்டிங்கிலிருந்து தானியக்கத்திற்கு இணைத்து தரவை வளர்ச்சியாக மாற்றுகிறோம்.",
+    "Social Media Ads": "சமூக ஊடக விளம்பரங்கள்",
+    "Attract the right audience and increase engagement.": "சரியான பார்வையாளர்களை ஈர்த்து ஈடுபாட்டை அதிகரிக்கவும்.",
+    "Website / Landing Page": "இணையதளம் / லாண்டிங் பக்கம்",
+    "Capture leads with high-converting pages and forms.": "உயர் மாற்று பக்கங்கள் மற்றும் படிவங்கள் மூலம் leads பெறுங்கள்.",
+    "Nurture leads, automate replies and qualify customers.": "Leads பராமரித்து, பதில்களை தானியக்கி வாடிக்கையாளர்களை தகுதி பார்க்கவும்.",
+    "Track performance, monitor results and make smarter decisions.": "செயல்திறனை கண்காணித்து, முடிவுகளை பார்த்து நல்ல முடிவெடுக்கவும்.",
+    "Repeat Customers": "மீண்டும் வரும் வாடிக்கையாளர்கள்",
+    "Create follow-ups and retain customers for loyal sales.": "Follow-up உருவாக்கி வாடிக்கையாளர்களை தக்க வைத்து விற்பனை வளர்க்கவும்.",
+    "AI-Powered Solutions": "AI ஆதரவு தீர்வுகள்",
+    "Smarter automation for better results.": "சிறந்த முடிவுகளுக்கு புத்திசாலி தானியக்கம்.",
+    "Secure & Reliable": "பாதுகாப்பான & நம்பகமான",
+    "Your data and systems are safe with us.": "உங்கள் தரவு மற்றும் அமைப்புகள் எங்களிடம் பாதுகாப்பாக உள்ளன.",
+    "Custom & Scalable": "தனிப்பயன் & விரிவாக்கக்கூடிய",
+    "Solutions built for your business growth.": "உங்கள் வணிக வளர்ச்சிக்கான தீர்வுகள்.",
+    "Ready to Grow Your Business?": "உங்கள் வணிகத்தை வளர்க்க தயாரா?",
+    "Let’s build your digital success story together.": "உங்கள் டிஜிட்டல் வெற்றி கதையை ஒன்றாக உருவாக்குவோம்.",
+    "WHY CHOOSE HDS CONSULTANCY": "ஏன் HDS CONSULTANCY",
+    "Smart Solutions.": "ஸ்மார்ட் தீர்வுகள்.",
+    "Real Results.": "உண்மையான முடிவுகள்.",
+    "AI-Powered": "AI ஆதரவு",
+    "Data-Driven": "தரவு சார்ந்த",
+    "Transparent": "வெளிப்படையான",
+    "Results-Focused": "முடிவு மையம்",
+    "Learn More About Us →": "மேலும் அறிய →",
+    "Proof, Wins &": "ஆதாரம், வெற்றி &",
+    "Growth Signals": "வளர்ச்சி அறிகுறிகள்",
+    "OUR LOCATION": "எங்கள் இடம்",
+    "Visit Us in Rawang": "Rawang-இல் வருக",
+    "Get Directions": "வழி காண்க",
+    "BOOK A CALL": "அழைப்பு பதிவு",
+    "Let's Build Something Amazing Together": "ஒன்றாக சிறப்பானதை உருவாக்குவோம்",
+    "Name": "பெயர்",
+    "Phone": "தொலைபேசி",
+    "Email": "மின்னஞ்சல்",
+    "Service": "சேவை",
+    "Query / Details": "கேள்வி / விவரங்கள்",
+    "Submit to WhatsApp →": "WhatsApp-க்கு அனுப்பு →",
+    "SHOP SERVICES": "கடை சேவைகள்",
+    "Packages & Services": "தொகுப்புகள் & சேவைகள்",
+    "Choose the right solution or package for your business needs.": "உங்கள் வணிகத் தேவைக்கு சரியான தீர்வு அல்லது தொகுப்பை தேர்வு செய்யுங்கள்.",
+    "Web & Development": "வெப் & மேம்பாடு",
+    "Managed Services": "நிர்வகிக்கப்பட்ட சேவைகள்",
+    "Bundles": "கூட்டு தொகுப்புகள்",
+    "Most Popular Packages": "மிக பிரபலமான தொகுப்புகள்",
+    "Choose Package": "தொகுப்பை தேர்வு",
+    "Request Quote": "மேற்கோள் கேள்",
+    "Choose": "தேர்வு",
+    "View All Services": "அனைத்து சேவைகளையும் பார்க்க",
+    "100% Secure": "100% பாதுகாப்பு",
+    "Safe & trusted payment": "பாதுகாப்பான நம்பகமான கட்டணம்",
+    "Fast Delivery": "வேகமான வழங்கல்",
+    "On-time project delivery": "நேரத்தில் திட்ட வழங்கல்",
+    "Free Consultation": "இலவச ஆலோசனை",
+    "Expert advice for you": "உங்களுக்கு நிபுணர் ஆலோசனை",
+    "Support 24/7": "24/7 ஆதரவு",
+    "We are here to help": "உதவ தயாராக இருக்கிறோம்",
+    "Join Our": "எங்கள்",
+    "Team": "அணியில் சேருங்கள்",
+    "Send Career Request": "வேலைவாய்ப்பு கோரிக்கை அனுப்பு",
+    "Full Name": "முழு பெயர்",
+    "Role Interested In": "ஆர்வமான பதவி",
+    "Select a role": "பதவியை தேர்வு",
+    "Portfolio / LinkedIn": "Portfolio / LinkedIn",
+    "Short Message": "குறுகிய செய்தி",
+    "Resume / CV": "Resume / CV",
+    "Send to WhatsApp →": "WhatsApp-க்கு அனுப்பு →",
+    "Add Packages": "தொகுப்புகள் சேர்",
+    "Selected Packages": "தேர்ந்தெடுத்த தொகுப்புகள்",
+    "Total": "மொத்தம்",
+    "Back to Home ->": "முகப்புக்கு திரும்ப ->"
+  }
+};
+  const baseText = new WeakMap();
+  const basePlaceholder = new WeakMap();
+  let observer;
+  let applyTimer;
+  let isApplying = false;
+
+  function getLanguage() {
+    const stored = localStorage.getItem(STORAGE_KEY) || 'en';
+    return supportedLanguages.includes(stored) ? stored : 'en';
+  }
+
+  function clean(value) {
+    return String(value || '').replace(/\s+/g, ' ').trim();
+  }
+
+  function translate(value, lang) {
+    const normalized = clean(value);
+    if (!normalized) return value;
+    return lang === 'en' ? normalized : dictionaries[lang]?.[normalized] || normalized;
+  }
+
+  function applyToTextNode(node, lang) {
+    if (!node.nodeValue || !node.nodeValue.trim()) return;
+    if (!baseText.has(node)) baseText.set(node, node.nodeValue);
+    const original = baseText.get(node);
+    const leading = original.match(/^\s*/)?.[0] || '';
+    const trailing = original.match(/\s*$/)?.[0] || '';
+    node.nodeValue = leading + translate(original, lang) + trailing;
+  }
+
+  function shouldSkip(parent) {
+    if (!parent) return true;
+    if (['SCRIPT', 'STYLE', 'NOSCRIPT', 'TEXTAREA', 'SELECT', 'OPTION'].includes(parent.tagName)) return true;
+    return Boolean(parent.closest('[data-no-i18n], .sr-only'));
+  }
+
+  function walkText(root, lang) {
+    if (!root) return;
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+      acceptNode(node) {
+        if (!node.nodeValue || !node.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+        return shouldSkip(node.parentElement) ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach(node => applyToTextNode(node, lang));
+  }
+
+  function applyPlaceholders(lang) {
+    document.querySelectorAll('input[placeholder], textarea[placeholder]').forEach(field => {
+      if (!basePlaceholder.has(field)) basePlaceholder.set(field, field.getAttribute('placeholder') || '');
+      field.setAttribute('placeholder', translate(basePlaceholder.get(field), lang));
+    });
+  }
+
+  function syncControls(lang) {
+    document.querySelectorAll('[data-language-select]').forEach(select => {
+      select.value = lang;
+      if (select.dataset.i18nBound === 'true') return;
+      select.dataset.i18nBound = 'true';
+      select.addEventListener('change', event => apply(event.target.value));
+    });
+  }
+
+  function apply(lang = getLanguage()) {
+    const nextLang = supportedLanguages.includes(lang) ? lang : 'en';
+    isApplying = true;
+    localStorage.setItem(STORAGE_KEY, nextLang);
+    document.documentElement.lang = languageMeta[nextLang].htmlLang;
+    syncControls(nextLang);
+    walkText(document.body, nextLang);
+    applyPlaceholders(nextLang);
+    isApplying = false;
+  }
+
+  function scheduleApply() {
+    if (isApplying) return;
+    window.clearTimeout(applyTimer);
+    applyTimer = window.setTimeout(() => apply(getLanguage()), 30);
+  }
+
+  function observe() {
+    if (observer || !document.body) return;
+    observer = new MutationObserver(mutations => {
+      if (isApplying) return;
+      if (mutations.some(mutation => mutation.addedNodes.length)) scheduleApply();
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+  }
+
+  function controlHtml() {
+    const options = supportedLanguages.map(code => '<option value="' + code + '">' + languageMeta[code].label + '</option>').join('');
+    return '<label class="language-control" aria-label="Language"><span class="language-icon">🌐</span><select data-language-select>' + options + '</select></label>';
+  }
+
+  function init() {
+    apply(getLanguage());
+    observe();
+  }
+
+  window.HDSI18n = { controlHtml, init, apply };
+
+  if (document.readyState !== 'loading') init();
+  else document.addEventListener('DOMContentLoaded', init, { once: true });
+})();

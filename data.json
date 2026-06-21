@@ -20,7 +20,7 @@
       {
         "name": "TikTok",
         "url": "https://www.tiktok.com/@hd_talk",
-        "icon": "\u266a"
+        "icon": "♪"
       },
       {
         "name": "Facebook",
@@ -88,126 +88,126 @@
   ],
   "services": [
     {
-      "icon": "\ud83d\udcbb",
+      "icon": "💻",
       "title": "Website Design",
       "category": "Web",
       "description": "Modern responsive business websites with clean UI, SEO-ready structure and conversion-focused layout.",
       "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80"
     },
     {
-      "icon": "\ud83c\udfa8",
+      "icon": "🎨",
       "title": "Redesign & Customization",
       "category": "Web",
       "description": "Improve existing client websites with better visuals, speed, structure, content and user journey.",
       "image": "https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=900&q=80"
     },
     {
-      "icon": "\ud83d\udce3",
+      "icon": "📣",
       "title": "Social Media Automation",
       "category": "Automation",
       "description": "Plan, automate and manage content workflows, lead capture, follow-ups and engagement campaigns.",
       "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=900&q=80"
     },
     {
-      "icon": "\ud83e\udde9",
+      "icon": "🧩",
       "title": "Custom Web Apps",
       "category": "Development",
       "description": "Build dashboards, portals, internal tools and business web applications tailored to operations.",
       "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80"
     },
     {
-      "icon": "\ud83d\udcf1",
+      "icon": "📱",
       "title": "Mobile Apps",
       "category": "Development",
       "description": "Design mobile-first experiences and app concepts for iOS, Android and cross-platform delivery.",
       "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=900&q=80"
     },
     {
-      "icon": "\u2728",
+      "icon": "✨",
       "title": "Branding & Identity",
       "category": "Brand",
       "description": "Create digital brand positioning, visual direction, messaging and online presence for businesses.",
       "image": "https://images.unsplash.com/photo-1600508774634-4e11d34730e2?auto=format&fit=crop&w=900&q=80"
     },
     {
-      "icon": "\ud83d\udc65",
+      "icon": "👥",
       "title": "Outsourcing Tech Talent",
       "category": "Talent",
       "description": "Provide technical professionals for development, QA, automation, cloud, support and project work.",
       "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=80"
     },
     {
-      "icon": "\ud83e\uddea",
+      "icon": "🧪",
       "title": "Testing & QA",
       "category": "Quality",
       "description": "Test web and mobile apps through functional testing, regression, UAT support and defect reporting.",
       "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
     },
     {
-      "icon": "\u2601\ufe0f",
+      "icon": "☁️",
       "title": "Cloud Integration",
       "category": "Cloud",
       "description": "Cloud setup, migration and integration across AWS, Azure and GCP with cost-conscious planning.",
       "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80"
     },
     {
-      "icon": "\ud83d\udcc8",
+      "icon": "📈",
       "title": "TradingView Pine Script",
       "category": "Trading Tech",
       "description": "Create custom TradingView indicators, strategies, alerts and backtesting logic for traders.",
       "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=900&q=80"
     },
     {
-      "icon": "\u2699\ufe0f",
+      "icon": "⚙️",
       "title": "MT4 / MT5 EA Creation",
       "category": "Trading Tech",
       "description": "Build Expert Advisor concepts, automation logic and trading support tools for MT4 and MT5.",
       "image": "https://images.unsplash.com/photo-1560221328-12fe60f83ab8?auto=format&fit=crop&w=900&q=80"
     },
     {
-      "icon": "\ud83c\udf93",
+      "icon": "🎓",
       "title": "Training & Workshops",
       "category": "Training",
       "description": "Online and offline training for individuals, teams and business owners on digital tools, AI and cloud.",
       "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80"
     },
     {
-      "icon": "\ud83d\udcac",
+      "icon": "💬",
       "title": "AI Chatbots & WhatsApp Automation",
       "category": "Automation",
       "description": "WhatsApp sales assistants, FAQ bots, lead qualification and customer support automation.",
       "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=80"
     },
     {
-      "icon": "\ud83d\udd0e",
+      "icon": "🔎",
       "title": "SEO & Analytics",
       "category": "Marketing",
       "description": "Improve visibility, track performance, build dashboards and report useful growth insights.",
       "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80"
     },
     {
-      "icon": "\ud83d\udd0c",
+      "icon": "🔌",
       "title": "API & Workflow Automation",
       "category": "Automation",
       "description": "Connect forms, CRM, spreadsheets, databases and apps into smoother automated workflows.",
       "image": "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&w=900&q=80"
     },
     {
-      "icon": "\ud83d\udee0\ufe0f",
+      "icon": "🛠️",
       "title": "Maintenance & Support",
       "category": "Support",
       "description": "Keep websites, apps and automation flows secure, updated, optimized and reliable.",
       "image": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=80"
     },
     {
-      "icon": "\ud83d\uded2",
+      "icon": "🛒",
       "title": "E-commerce & Landing Pages",
       "category": "Web",
       "description": "Build sales pages, landing pages and simple online store experiences designed to convert.",
       "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=80"
     },
     {
-      "icon": "\ud83e\udded",
+      "icon": "🧭",
       "title": "Digital Consulting",
       "category": "Strategy",
       "description": "Discovery, roadmap planning and practical consulting to choose the right digital solution.",
@@ -260,7 +260,7 @@
   },
   "booking": {
     "headline": "Let's Build Something Amazing Together",
-    "subtext": "Schedule a consultation and let\u2019s discuss how HDS Consultancy can help your business grow.",
+    "subtext": "Schedule a consultation and let’s discuss how HDS Consultancy can help your business grow.",
     "calendarLink": "https://calendar.google.com/calendar/appointments/schedules/",
     "attachmentLimitMB": 5,
     "note": "Google Calendar availability can be connected using your Google Appointment Schedule link or Calendar API. This demo includes a frontend calendar picker and WhatsApp submission."
@@ -326,5 +326,516 @@
       "localPageExample": "client_spa/index.html",
       "liveUrlExample": "https://client-domain.com/"
     }
+  },
+  "shop": {
+    "eyebrow": "SHOP SERVICES",
+    "headline": "Packages & Services",
+    "subtext": "Choose the right website, automation, marketing or analytics package for your business needs.",
+    "defaultCurrency": "MYR",
+    "currencies": [
+      "MYR",
+      "SGD",
+      "USD",
+      "AUD"
+    ],
+    "exchangeRates": {
+      "MYR": 1,
+      "SGD": 0.29,
+      "USD": 0.21,
+      "AUD": 0.32
+    },
+    "products": [
+      {
+        "id": "landing-page-basic",
+        "group": "Web & Development Packages",
+        "title": "Landing Page",
+        "category": "Web & Development",
+        "filter": "web",
+        "description": "A fast single-page campaign or business landing page built to capture enquiries.",
+        "suitable": [
+          "Freelancers",
+          "Home businesses",
+          "Campaign launches"
+        ],
+        "duration": "Starting Price",
+        "price": {
+          "type": "from",
+          "amount": 500,
+          "cadence": "Starting Price"
+        },
+        "badge": "FROM RM500",
+        "icon": "🎯",
+        "features": [
+          "1-page responsive landing page",
+          "Hero, offer, benefits and CTA sections",
+          "WhatsApp click-to-chat button",
+          "Contact or lead capture form",
+          "Basic on-page SEO setup",
+          "Google Analytics / Meta Pixel ready",
+          "Speed and mobile optimisation",
+          "1 round revision"
+        ]
+      },
+      {
+        "id": "wordpress-development",
+        "group": "Web & Development Packages",
+        "title": "WordPress Development",
+        "category": "Web & Development",
+        "filter": "web",
+        "description": "A manageable business website using WordPress CMS, pages, plugins and basic handover.",
+        "suitable": [
+          "SMEs",
+          "Service businesses",
+          "Content-led websites"
+        ],
+        "duration": "Starting Price",
+        "price": {
+          "type": "from",
+          "amount": 699,
+          "cadence": "Starting Price"
+        },
+        "badge": "WORDPRESS",
+        "icon": "📝",
+        "features": [
+          "WordPress CMS setup",
+          "Theme customisation",
+          "Up to 5 core pages",
+          "Blog or news section",
+          "Essential plugin setup",
+          "Contact form and WhatsApp integration",
+          "Basic SEO and analytics setup",
+          "Admin handover guidance"
+        ]
+      },
+      {
+        "id": "woocommerce-development",
+        "group": "Web & Development Packages",
+        "title": "WooCommerce Development",
+        "category": "Web & Development",
+        "filter": "web",
+        "description": "A WordPress ecommerce store for product catalog, checkout, orders and payment workflows.",
+        "suitable": [
+          "Retailers",
+          "Online sellers",
+          "Product businesses"
+        ],
+        "duration": "Starting Price",
+        "price": {
+          "type": "from",
+          "amount": 699,
+          "cadence": "Starting Price"
+        },
+        "badge": "ECOMMERCE",
+        "icon": "🛒",
+        "features": [
+          "WooCommerce store setup",
+          "Product catalog and categories",
+          "Cart and checkout configuration",
+          "Payment gateway setup guidance",
+          "Shipping and tax basics",
+          "Order email setup",
+          "Inventory basics",
+          "Analytics / ecommerce tracking ready"
+        ]
+      },
+      {
+        "id": "shopify-landing-page",
+        "group": "Web & Development Packages",
+        "title": "Shopify Landing Page",
+        "category": "Web & Development",
+        "filter": "web",
+        "description": "A focused Shopify product or campaign landing page connected to store checkout flow.",
+        "suitable": [
+          "Product brands",
+          "Dropshippers",
+          "Campaign stores"
+        ],
+        "duration": "Starting Price",
+        "price": {
+          "type": "from",
+          "amount": 699,
+          "cadence": "Starting Price"
+        },
+        "badge": "SHOPIFY",
+        "icon": "🛍️",
+        "features": [
+          "Shopify theme section setup",
+          "Product or campaign landing page",
+          "Mobile-first conversion layout",
+          "Product CTA and checkout link",
+          "Basic product setup guidance",
+          "Trust badges and FAQ section",
+          "Tracking pixel ready",
+          "Launch checklist"
+        ]
+      },
+      {
+        "id": "website-starter",
+        "group": "Website Packages",
+        "title": "Starter Website",
+        "category": "Website",
+        "filter": "web",
+        "description": "A clean launch package for freelancers, home businesses and small startups.",
+        "suitable": [
+          "Freelancer",
+          "Home business",
+          "Small startup"
+        ],
+        "duration": "One Time Payment",
+        "price": {
+          "type": "range",
+          "min": 799,
+          "max": 1499,
+          "cadence": "One Time Payment"
+        },
+        "badge": "STARTER",
+        "icon": "🖥️",
+        "features": [
+          "5 Pages",
+          "Mobile Responsive",
+          "WhatsApp Button",
+          "Contact Form",
+          "Google Maps",
+          "Basic SEO",
+          "Google Analytics",
+          "1 Month Support"
+        ]
+      },
+      {
+        "id": "website-business",
+        "group": "Website Packages",
+        "title": "Business Website",
+        "category": "Website",
+        "filter": "web",
+        "description": "A custom business website for SMEs that need leads, content and light automation.",
+        "suitable": [
+          "SME",
+          "Logistics",
+          "Clinics",
+          "Tuition Centres"
+        ],
+        "duration": "One Time Payment",
+        "price": {
+          "type": "range",
+          "min": 1999,
+          "max": 3499,
+          "cadence": "One Time Payment"
+        },
+        "badge": "POPULAR",
+        "icon": "🏬",
+        "features": [
+          "Up to 15 Pages",
+          "Custom Design",
+          "Blog",
+          "Lead Forms",
+          "WhatsApp Integration",
+          "Google Sheet Integration",
+          "Analytics Dashboard",
+          "Basic Automation"
+        ]
+      },
+      {
+        "id": "ecommerce-website",
+        "group": "Website Packages",
+        "title": "E-Commerce Website",
+        "category": "Website",
+        "filter": "web",
+        "description": "Online store setup with customer accounts, checkout and marketing tracking.",
+        "duration": "One Time Payment",
+        "price": {
+          "type": "rangePlus",
+          "min": 3999,
+          "max": 15000,
+          "cadence": "One Time Payment"
+        },
+        "badge": "BEST VALUE",
+        "icon": "🛒",
+        "features": [
+          "Product Catalog",
+          "Cart",
+          "Payment Gateway",
+          "TNG / GrabPay / FPX",
+          "Order Dashboard",
+          "Customer Login",
+          "Marketing Tracking"
+        ]
+      },
+      {
+        "id": "whatsapp-starter",
+        "group": "Automation Packages",
+        "title": "WhatsApp Starter",
+        "category": "Automation",
+        "filter": "automation",
+        "description": "Simple WhatsApp automation to capture leads and answer common questions.",
+        "duration": "Setup + Monthly",
+        "price": {
+          "type": "setupMonthly",
+          "setup": 499,
+          "monthly": 99,
+          "cadence": "Setup + Monthly"
+        },
+        "badge": "AUTOMATION",
+        "icon": "💬",
+        "features": [
+          "WhatsApp Button",
+          "Auto Greeting",
+          "FAQ Responses",
+          "Lead Capture",
+          "Google Sheet Storage"
+        ]
+      },
+      {
+        "id": "whatsapp-ai-agent",
+        "group": "Automation Packages",
+        "title": "WhatsApp AI Sales Agent",
+        "category": "Automation",
+        "filter": "automation",
+        "description": "AI-powered WhatsApp assistant for enquiries, qualification and appointments.",
+        "duration": "Setup + Monthly",
+        "price": {
+          "type": "setupMonthly",
+          "setup": 1499,
+          "monthly": 199,
+          "cadence": "Setup + Monthly"
+        },
+        "badge": "AI SALES",
+        "icon": "🤖",
+        "features": [
+          "AI Sales Assistant",
+          "Product FAQ",
+          "Lead Qualification",
+          "Quotation Request",
+          "Appointment Booking"
+        ]
+      },
+      {
+        "id": "tiktok-starter",
+        "group": "Marketing Packages",
+        "title": "TikTok Marketing Starter",
+        "category": "Marketing",
+        "filter": "marketing",
+        "description": "Starter TikTok presence with posting plan, hashtags and basic reporting.",
+        "duration": "Monthly",
+        "price": {
+          "type": "monthly",
+          "amount": 799,
+          "cadence": "Monthly"
+        },
+        "badge": "TIKTOK",
+        "icon": "🎵",
+        "features": [
+          "8 Posts",
+          "Content Calendar",
+          "Hashtag Research",
+          "Basic Reporting"
+        ]
+      },
+      {
+        "id": "meta-ads-growth",
+        "group": "Marketing Packages",
+        "title": "Meta Ads Management Growth",
+        "category": "Marketing",
+        "filter": "marketing",
+        "description": "Retargeting and campaign testing for stronger paid acquisition.",
+        "duration": "Monthly",
+        "price": {
+          "type": "monthly",
+          "amount": 1299,
+          "cadence": "Monthly"
+        },
+        "badge": "META",
+        "icon": "🎯",
+        "features": [
+          "Multiple Campaigns",
+          "Retargeting",
+          "A/B Testing",
+          "Monthly Strategy"
+        ]
+      },
+      {
+        "id": "ga4-setup",
+        "group": "Analytics Packages",
+        "title": "Google Analytics Setup",
+        "category": "Analytics",
+        "filter": "data",
+        "description": "One-time analytics setup for website goals, events and conversions.",
+        "duration": "One-Time",
+        "price": {
+          "type": "amount",
+          "amount": 299,
+          "cadence": "One-Time"
+        },
+        "badge": "ANALYTICS",
+        "icon": "📊",
+        "features": [
+          "GA4 Setup",
+          "Goal Tracking",
+          "Conversion Tracking"
+        ]
+      },
+      {
+        "id": "looker-dashboard",
+        "group": "Analytics Packages",
+        "title": "Looker Studio Dashboard",
+        "category": "Analytics",
+        "filter": "data",
+        "description": "Marketing and lead dashboard for clearer campaign performance tracking.",
+        "duration": "One Time Payment",
+        "price": {
+          "type": "range",
+          "min": 799,
+          "max": 1499,
+          "cadence": "One Time Payment"
+        },
+        "badge": "DASHBOARD",
+        "icon": "📉",
+        "features": [
+          "Marketing Dashboard",
+          "Website Analytics",
+          "Lead Tracking"
+        ]
+      },
+      {
+        "id": "cloud-setup-starter",
+        "group": "Cloud & DevOps",
+        "title": "Cloud Setup Starter",
+        "category": "Cloud",
+        "filter": "cloud",
+        "description": "Basic cloud setup for reliable hosting and deployment foundations.",
+        "duration": "One Time Payment",
+        "price": {
+          "type": "amount",
+          "amount": 999,
+          "cadence": "One Time Payment"
+        },
+        "badge": "CLOUD",
+        "icon": "☁️",
+        "features": [
+          "Cloud account review",
+          "Hosting setup",
+          "Domain and SSL configuration",
+          "Backup basics",
+          "Deployment checklist"
+        ]
+      },
+      {
+        "id": "qa-testing-basic",
+        "group": "Testing & Quality",
+        "title": "Website & App QA Testing",
+        "category": "Testing",
+        "filter": "testing",
+        "description": "Functional testing for websites, mobile apps and workflows before launch.",
+        "duration": "Project Based",
+        "price": {
+          "type": "range",
+          "min": 799,
+          "max": 1999,
+          "cadence": "Project Based"
+        },
+        "badge": "QA",
+        "icon": "✅",
+        "features": [
+          "Functional testing",
+          "Regression testing",
+          "UAT checklist",
+          "Bug report",
+          "Retest summary"
+        ]
+      },
+      {
+        "id": "brand-identity-starter",
+        "group": "Design & Branding",
+        "title": "Brand Identity Starter",
+        "category": "Design",
+        "filter": "design",
+        "description": "A starter visual identity pack for new or refreshing businesses.",
+        "duration": "Project Based",
+        "price": {
+          "type": "range",
+          "min": 899,
+          "max": 2499,
+          "cadence": "Project Based"
+        },
+        "badge": "BRAND",
+        "icon": "🎨",
+        "features": [
+          "Logo refinement",
+          "Color palette",
+          "Typography guide",
+          "Social profile assets",
+          "Mini brand sheet"
+        ]
+      },
+      {
+        "id": "digital-training-workshop",
+        "group": "Training & Consulting",
+        "title": "Digital Training Workshop",
+        "category": "Training",
+        "filter": "training",
+        "description": "Hands-on training for websites, automation, analytics or AI tools.",
+        "duration": "Per Workshop",
+        "price": {
+          "type": "range",
+          "min": 1499,
+          "max": 3999,
+          "cadence": "Per Workshop"
+        },
+        "badge": "TRAINING",
+        "icon": "🎓",
+        "features": [
+          "Half-day or full-day session",
+          "Training materials",
+          "Live walkthrough",
+          "Team Q&A",
+          "Post-session notes"
+        ]
+      },
+      {
+        "id": "maintenance-business",
+        "group": "Managed Services",
+        "title": "Website Maintenance Business",
+        "category": "Managed Services",
+        "filter": "managed",
+        "description": "Website support with content changes and monthly reporting.",
+        "duration": "Monthly",
+        "price": {
+          "type": "monthly",
+          "amount": 299,
+          "cadence": "Monthly"
+        },
+        "badge": "SUPPORT",
+        "icon": "🧰",
+        "features": [
+          "Content Updates",
+          "Monthly Reports",
+          "Support"
+        ]
+      },
+      {
+        "id": "bundle-complete-growth",
+        "group": "High-Profit Bundles",
+        "title": "Complete Growth Engine",
+        "category": "Bundle",
+        "filter": "bundles",
+        "description": "Featured customer journey: TikTok / Meta to Website, WhatsApp, Google Sheet, Dashboard and repeat customers.",
+        "duration": "One Time Payment",
+        "price": {
+          "type": "range",
+          "min": 7999,
+          "max": 12999,
+          "cadence": "One Time Payment"
+        },
+        "badge": "FEATURED",
+        "icon": "🔥",
+        "features": [
+          "Premium Website",
+          "WhatsApp AI Agent",
+          "Meta Ads",
+          "TikTok Marketing",
+          "Dashboard",
+          "Monthly Reporting"
+        ]
+      }
+    ]
   }
 }

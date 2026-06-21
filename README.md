@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # HDS Consultancy Website
 
 Static, mobile-responsive website inspired by the supplied light and dark design references.
@@ -39,6 +38,3 @@ http://localhost:8000
 ## Booking note
 
 The current booking UI is a frontend design. For real Google Calendar availability, connect Google Appointment Schedule, Calendly, or a backend integration using Google Calendar API.
-=======
-# HDHub
->>>>>>> 09142ec6c3fc7a613253773ae6e4932e5c1085b9

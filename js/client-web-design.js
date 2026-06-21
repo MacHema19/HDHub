@@ -85,20 +85,12 @@ class ClientDesignPage {
           </a>
           <nav class="nav-links" data-nav-links>
             <a href="index.html#home">Home</a>
-            <a href="index.html#services">Services</a>
-            <a href="index.html${portfolio.url}">${portfolio.label}</a>
-            <div class="nav-dropdown">
-              <button type="button" class="dropdown-trigger active" aria-haspopup="true" aria-expanded="false">${clientWebDesign.label} ▾</button>
-              <div class="dropdown-menu">${menuItems}</div>
-            </div>
-            <a href="index.html#careers">Careers</a>
-            <a href="index.html#contact">Contact</a>
+            <div class="nav-dropdown"><button type="button" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">Services ▾</button><div class="dropdown-menu"><a href="index.html#services">Service Categories</a><a href="shop.html">Packages</a><a href="index.html#growth-engine">Growth Engine</a></div></div>
+            <a href="index.html#services">Solutions</a>
+            <div class="nav-dropdown"><button type="button" class="dropdown-trigger active" aria-haspopup="true" aria-expanded="false">Client Work ▾</button><div class="dropdown-menu">${menuItems}</div></div>
+            <a href="shop.html">Shop</a><a href="index.html#about">About</a><div class="nav-dropdown"><button type="button" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">Contact ▾</button><div class="dropdown-menu"><a href="index.html#contact">Contact</a><a href="careers.html">Careers</a></div></div>
           </nav>
-          <div class="nav-actions">
-            <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme"><span data-theme-icon>🌙</span></button>
-            <a class="btn btn-primary btn-small" href="index.html#booking">Book a Call</a>
-            <button class="menu-toggle" data-menu-toggle aria-label="Open menu">☰</button>
-          </div>
+          <div class="nav-actions"><button class="theme-switch" type="button" data-theme-toggle aria-label="Toggle theme"><span class="theme-switch-control"><span class="theme-switch-thumb" data-theme-icon>🌙</span></span></button><a class="btn btn-primary btn-small" href="index.html#booking">Book a Call</a>${window.HDSI18n?.controlHtml?.() || ""}<button class="menu-toggle" data-menu-toggle aria-label="Open menu">☰</button></div>
         </div>
       </header>
       <main>
@@ -152,8 +144,24 @@ class ClientDesignPage {
 
   bindEvents() {
     document.querySelector('[data-theme-toggle]')?.addEventListener('click', () => this.theme.toggle());
-    document.querySelector('[data-menu-toggle]')?.addEventListener('click', () => document.querySelector('[data-nav-links]')?.classList.toggle('open'));
-    document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => document.querySelector('[data-nav-links]')?.classList.remove('open')));
+    const navLinks = document.querySelector('[data-nav-links]');
+    const menuToggle = document.querySelector('[data-menu-toggle]');
+    const setMenuState = open => {
+      navLinks?.classList.toggle('open', open);
+      if (menuToggle) {
+        menuToggle.textContent = open ? '×' : '☰';
+        menuToggle.setAttribute('aria-expanded', String(open));
+        menuToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      }
+      document.body.classList.toggle('menu-open', open);
+      if (!open) document.querySelectorAll('.nav-dropdown.open').forEach(d => { d.classList.remove('open'); d.querySelector('.dropdown-trigger')?.setAttribute('aria-expanded','false'); });
+    };
+    menuToggle?.setAttribute('aria-expanded', 'false');
+    menuToggle?.addEventListener('click', e => { e.stopPropagation(); setMenuState(!navLinks?.classList.contains('open')); });
+    const closeMobileMenu = () => setMenuState(false);
+    document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', closeMobileMenu));
+    document.addEventListener('click', e => { if (navLinks?.classList.contains('open') && !e.target.closest('[data-nav-links]') && !e.target.closest('[data-menu-toggle]')) setMenuState(false); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') setMenuState(false); });
     this.bindDropdowns();
   }
 
