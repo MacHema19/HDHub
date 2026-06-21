@@ -1989,6 +1989,85 @@ body {
   appearance: auto;
 }
 
+.shop-page-main .shop-catalog-section,
+.shop-page-main .shop-block-head,
+.shop-page-main .shop-package-card,
+.shop-page-main .shop-service-card,
+.shop-page-main .shop-benefit-item {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.service-category-card {
+  align-items: center !important;
+  justify-content: center;
+  text-align: center;
+  padding: 24px 20px;
+}
+
+.service-category-card .service-icon-badge {
+  width: 64px;
+  height: 64px;
+  flex-basis: 64px;
+  margin: 0 auto 4px;
+  border-radius: 50%;
+  font-size: 1.45rem;
+}
+
+.service-category-card h3,
+.service-category-card p,
+.service-category-card a {
+  text-align: center;
+}
+
+.service-category-card p {
+  max-width: 28ch;
+}
+
+.service-category-card a {
+  align-self: center;
+}
+
+.service-category-card .service-icon-ai {
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: .02em;
+}
+
+@media (max-width: 1040px) {
+  :root { --nav-height: 86px; }
+  .logo {
+    min-width: 0 !important;
+    max-width: min(58vw, 360px) !important;
+    gap: 10px !important;
+  }
+  .logo small {
+    display: block !important;
+    max-width: 100% !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: .78rem !important;
+    line-height: 1.2 !important;
+    font-weight: 700 !important;
+  }
+  .logo strong {
+    font-size: 1rem !important;
+    line-height: 1.08 !important;
+  }
+  .logo-mark {
+    width: 52px !important;
+    height: 52px !important;
+    flex-basis: 52px !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .logo { max-width: 54vw !important; }
+  .logo small { font-size: .72rem !important; }
+  .logo strong { font-size: .92rem !important; }
+}
+
 
 /* Booking form polish and precise mobile drawer */
 .booking-card form,
