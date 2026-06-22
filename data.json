@@ -346,25 +346,23 @@
     },
     "products": [
       {
-        "id": "landing-page-basic",
-        "group": "Web & Development Packages",
+        "id": "landing-page",
         "title": "Landing Page",
+        "group": "Most Popular Packages",
         "category": "Web & Development",
         "filter": "web",
+        "badge": "FROM RM500",
+        "icon": "🎯",
         "description": "A fast single-page campaign or business landing page built to capture enquiries.",
-        "suitable": [
+        "suitableFor": [
           "Freelancers",
           "Home businesses",
           "Campaign launches"
         ],
-        "duration": "Starting Price",
-        "price": {
-          "type": "from",
-          "amount": 500,
-          "cadence": "Starting Price"
-        },
-        "badge": "FROM RM500",
-        "icon": "🎯",
+        "priceType": "fixed",
+        "price": 500,
+        "pricePrefix": "From",
+        "priceNote": "Starting Price",
         "features": [
           "1-page responsive landing page",
           "Hero, offer, benefits and CTA sections",
@@ -372,30 +370,30 @@
           "Contact or lead capture form",
           "Basic on-page SEO setup",
           "Google Analytics / Meta Pixel ready",
-          "Speed and mobile optimisation",
-          "1 round revision"
-        ]
+          "Speed and mobile optimisation"
+        ],
+        "featured": false,
+        "ctaText": "View Details",
+        "ctaType": "cart"
       },
       {
         "id": "wordpress-development",
-        "group": "Web & Development Packages",
         "title": "WordPress Development",
+        "group": "Most Popular Packages",
         "category": "Web & Development",
         "filter": "web",
+        "badge": "WORDPRESS",
+        "icon": "📝",
         "description": "A manageable business website using WordPress CMS, pages, plugins and basic handover.",
-        "suitable": [
+        "suitableFor": [
           "SMEs",
           "Service businesses",
           "Content-led websites"
         ],
-        "duration": "Starting Price",
-        "price": {
-          "type": "from",
-          "amount": 699,
-          "cadence": "Starting Price"
-        },
-        "badge": "WORDPRESS",
-        "icon": "📝",
+        "priceType": "fixed",
+        "price": 699,
+        "pricePrefix": "From",
+        "priceNote": "Starting Price",
         "features": [
           "WordPress CMS setup",
           "Theme customisation",
@@ -403,438 +401,993 @@
           "Blog or news section",
           "Essential plugin setup",
           "Contact form and WhatsApp integration",
-          "Basic SEO and analytics setup",
-          "Admin handover guidance"
-        ]
-      },
-      {
-        "id": "woocommerce-development",
-        "group": "Web & Development Packages",
-        "title": "WooCommerce Development",
-        "category": "Web & Development",
-        "filter": "web",
-        "description": "A WordPress ecommerce store for product catalog, checkout, orders and payment workflows.",
-        "suitable": [
-          "Retailers",
-          "Online sellers",
-          "Product businesses"
+          "Basic SEO and analytics setup"
         ],
-        "duration": "Starting Price",
-        "price": {
-          "type": "from",
-          "amount": 699,
-          "cadence": "Starting Price"
-        },
-        "badge": "ECOMMERCE",
-        "icon": "🛒",
-        "features": [
-          "WooCommerce store setup",
-          "Product catalog and categories",
-          "Cart and checkout configuration",
-          "Payment gateway setup guidance",
-          "Shipping and tax basics",
-          "Order email setup",
-          "Inventory basics",
-          "Analytics / ecommerce tracking ready"
-        ]
+        "featured": false,
+        "ctaText": "View Details",
+        "ctaType": "cart"
       },
       {
-        "id": "shopify-landing-page",
-        "group": "Web & Development Packages",
-        "title": "Shopify Landing Page",
-        "category": "Web & Development",
-        "filter": "web",
-        "description": "A focused Shopify product or campaign landing page connected to store checkout flow.",
-        "suitable": [
-          "Product brands",
-          "Dropshippers",
-          "Campaign stores"
-        ],
-        "duration": "Starting Price",
-        "price": {
-          "type": "from",
-          "amount": 699,
-          "cadence": "Starting Price"
-        },
-        "badge": "SHOPIFY",
-        "icon": "🛍️",
-        "features": [
-          "Shopify theme section setup",
-          "Product or campaign landing page",
-          "Mobile-first conversion layout",
-          "Product CTA and checkout link",
-          "Basic product setup guidance",
-          "Trust badges and FAQ section",
-          "Tracking pixel ready",
-          "Launch checklist"
-        ]
-      },
-      {
-        "id": "website-starter",
-        "group": "Website Packages",
-        "title": "Starter Website",
-        "category": "Website",
-        "filter": "web",
-        "description": "A clean launch package for freelancers, home businesses and small startups.",
-        "suitable": [
-          "Freelancer",
-          "Home business",
-          "Small startup"
-        ],
-        "duration": "One Time Payment",
-        "price": {
-          "type": "range",
-          "min": 799,
-          "max": 1499,
-          "cadence": "One Time Payment"
-        },
-        "badge": "STARTER",
-        "icon": "🖥️",
-        "features": [
-          "5 Pages",
-          "Mobile Responsive",
-          "WhatsApp Button",
-          "Contact Form",
-          "Google Maps",
-          "Basic SEO",
-          "Google Analytics",
-          "1 Month Support"
-        ]
-      },
-      {
-        "id": "website-business",
-        "group": "Website Packages",
-        "title": "Business Website",
-        "category": "Website",
-        "filter": "web",
-        "description": "A custom business website for SMEs that need leads, content and light automation.",
-        "suitable": [
-          "SME",
-          "Logistics",
-          "Clinics",
-          "Tuition Centres"
-        ],
-        "duration": "One Time Payment",
-        "price": {
-          "type": "range",
-          "min": 1999,
-          "max": 3499,
-          "cadence": "One Time Payment"
-        },
-        "badge": "POPULAR",
-        "icon": "🏬",
-        "features": [
-          "Up to 15 Pages",
-          "Custom Design",
-          "Blog",
-          "Lead Forms",
-          "WhatsApp Integration",
-          "Google Sheet Integration",
-          "Analytics Dashboard",
-          "Basic Automation"
-        ]
-      },
-      {
-        "id": "ecommerce-website",
-        "group": "Website Packages",
-        "title": "E-Commerce Website",
-        "category": "Website",
-        "filter": "web",
-        "description": "Online store setup with customer accounts, checkout and marketing tracking.",
-        "duration": "One Time Payment",
-        "price": {
-          "type": "rangePlus",
-          "min": 3999,
-          "max": 15000,
-          "cadence": "One Time Payment"
-        },
-        "badge": "BEST VALUE",
-        "icon": "🛒",
-        "features": [
-          "Product Catalog",
-          "Cart",
-          "Payment Gateway",
-          "TNG / GrabPay / FPX",
-          "Order Dashboard",
-          "Customer Login",
-          "Marketing Tracking"
-        ]
-      },
-      {
-        "id": "whatsapp-starter",
-        "group": "Automation Packages",
-        "title": "WhatsApp Starter",
-        "category": "Automation",
-        "filter": "automation",
-        "description": "Simple WhatsApp automation to capture leads and answer common questions.",
-        "duration": "Setup + Monthly",
-        "price": {
-          "type": "setupMonthly",
-          "setup": 499,
-          "monthly": 99,
-          "cadence": "Setup + Monthly"
-        },
-        "badge": "AUTOMATION",
-        "icon": "💬",
-        "features": [
-          "WhatsApp Button",
-          "Auto Greeting",
-          "FAQ Responses",
-          "Lead Capture",
-          "Google Sheet Storage"
-        ]
-      },
-      {
-        "id": "whatsapp-ai-agent",
-        "group": "Automation Packages",
-        "title": "WhatsApp AI Sales Agent",
-        "category": "Automation",
-        "filter": "automation",
-        "description": "AI-powered WhatsApp assistant for enquiries, qualification and appointments.",
-        "duration": "Setup + Monthly",
-        "price": {
-          "type": "setupMonthly",
-          "setup": 1499,
-          "monthly": 199,
-          "cadence": "Setup + Monthly"
-        },
-        "badge": "AI SALES",
-        "icon": "🤖",
-        "features": [
-          "AI Sales Assistant",
-          "Product FAQ",
-          "Lead Qualification",
-          "Quotation Request",
-          "Appointment Booking"
-        ]
-      },
-      {
-        "id": "tiktok-starter",
-        "group": "Marketing Packages",
-        "title": "TikTok Marketing Starter",
-        "category": "Marketing",
-        "filter": "marketing",
-        "description": "Starter TikTok presence with posting plan, hashtags and basic reporting.",
-        "duration": "Monthly",
-        "price": {
-          "type": "monthly",
-          "amount": 799,
-          "cadence": "Monthly"
-        },
-        "badge": "TIKTOK",
-        "icon": "🎵",
-        "features": [
-          "8 Posts",
-          "Content Calendar",
-          "Hashtag Research",
-          "Basic Reporting"
-        ]
-      },
-      {
-        "id": "meta-ads-growth",
-        "group": "Marketing Packages",
-        "title": "Meta Ads Management Growth",
-        "category": "Marketing",
-        "filter": "marketing",
-        "description": "Retargeting and campaign testing for stronger paid acquisition.",
-        "duration": "Monthly",
-        "price": {
-          "type": "monthly",
-          "amount": 1299,
-          "cadence": "Monthly"
-        },
-        "badge": "META",
-        "icon": "🎯",
-        "features": [
-          "Multiple Campaigns",
-          "Retargeting",
-          "A/B Testing",
-          "Monthly Strategy"
-        ]
-      },
-      {
-        "id": "ga4-setup",
-        "group": "Analytics Packages",
-        "title": "Google Analytics Setup",
-        "category": "Analytics",
-        "filter": "data",
-        "description": "One-time analytics setup for website goals, events and conversions.",
-        "duration": "One-Time",
-        "price": {
-          "type": "amount",
-          "amount": 299,
-          "cadence": "One-Time"
-        },
-        "badge": "ANALYTICS",
-        "icon": "📊",
-        "features": [
-          "GA4 Setup",
-          "Goal Tracking",
-          "Conversion Tracking"
-        ]
-      },
-      {
-        "id": "looker-dashboard",
-        "group": "Analytics Packages",
-        "title": "Looker Studio Dashboard",
-        "category": "Analytics",
-        "filter": "data",
-        "description": "Marketing and lead dashboard for clearer campaign performance tracking.",
-        "duration": "One Time Payment",
-        "price": {
-          "type": "range",
-          "min": 799,
-          "max": 1499,
-          "cadence": "One Time Payment"
-        },
-        "badge": "DASHBOARD",
-        "icon": "📉",
-        "features": [
-          "Marketing Dashboard",
-          "Website Analytics",
-          "Lead Tracking"
-        ]
-      },
-      {
-        "id": "cloud-setup-starter",
-        "group": "Cloud & DevOps",
-        "title": "Cloud Setup Starter",
-        "category": "Cloud",
-        "filter": "cloud",
-        "description": "Basic cloud setup for reliable hosting and deployment foundations.",
-        "duration": "One Time Payment",
-        "price": {
-          "type": "amount",
-          "amount": 999,
-          "cadence": "One Time Payment"
-        },
-        "badge": "CLOUD",
-        "icon": "☁️",
-        "features": [
-          "Cloud account review",
-          "Hosting setup",
-          "Domain and SSL configuration",
-          "Backup basics",
-          "Deployment checklist"
-        ]
-      },
-      {
-        "id": "qa-testing-basic",
-        "group": "Testing & Quality",
-        "title": "Website & App QA Testing",
-        "category": "Testing",
-        "filter": "testing",
-        "description": "Functional testing for websites, mobile apps and workflows before launch.",
-        "duration": "Project Based",
-        "price": {
-          "type": "range",
-          "min": 799,
-          "max": 1999,
-          "cadence": "Project Based"
-        },
-        "badge": "QA",
-        "icon": "✅",
-        "features": [
-          "Functional testing",
-          "Regression testing",
-          "UAT checklist",
-          "Bug report",
-          "Retest summary"
-        ]
-      },
-      {
-        "id": "brand-identity-starter",
-        "group": "Design & Branding",
-        "title": "Brand Identity Starter",
-        "category": "Design",
-        "filter": "design",
-        "description": "A starter visual identity pack for new or refreshing businesses.",
-        "duration": "Project Based",
-        "price": {
-          "type": "range",
-          "min": 899,
-          "max": 2499,
-          "cadence": "Project Based"
-        },
-        "badge": "BRAND",
-        "icon": "🎨",
-        "features": [
-          "Logo refinement",
-          "Color palette",
-          "Typography guide",
-          "Social profile assets",
-          "Mini brand sheet"
-        ]
-      },
-      {
-        "id": "digital-training-workshop",
-        "group": "Training & Consulting",
-        "title": "Digital Training Workshop",
-        "category": "Training",
-        "filter": "training",
-        "description": "Hands-on training for websites, automation, analytics or AI tools.",
-        "duration": "Per Workshop",
-        "price": {
-          "type": "range",
-          "min": 1499,
-          "max": 3999,
-          "cadence": "Per Workshop"
-        },
-        "badge": "TRAINING",
-        "icon": "🎓",
-        "features": [
-          "Half-day or full-day session",
-          "Training materials",
-          "Live walkthrough",
-          "Team Q&A",
-          "Post-session notes"
-        ]
-      },
-      {
-        "id": "maintenance-business",
-        "group": "Managed Services",
-        "title": "Website Maintenance Business",
-        "category": "Managed Services",
-        "filter": "managed",
-        "description": "Website support with content changes and monthly reporting.",
-        "duration": "Monthly",
-        "price": {
-          "type": "monthly",
-          "amount": 299,
-          "cadence": "Monthly"
-        },
-        "badge": "SUPPORT",
-        "icon": "🧰",
-        "features": [
-          "Content Updates",
-          "Monthly Reports",
-          "Support"
-        ]
-      },
-      {
-        "id": "bundle-complete-growth",
-        "group": "High-Profit Bundles",
+        "id": "complete-growth-engine",
         "title": "Complete Growth Engine",
-        "category": "Bundle",
-        "filter": "bundles",
-        "description": "Featured customer journey: TikTok / Meta to Website, WhatsApp, Google Sheet, Dashboard and repeat customers.",
-        "duration": "One Time Payment",
-        "price": {
-          "type": "range",
-          "min": 7999,
-          "max": 12999,
-          "cadence": "One Time Payment"
-        },
+        "group": "Most Popular Packages",
+        "category": "Marketing & Growth",
+        "filter": "marketing",
         "badge": "FEATURED",
         "icon": "🔥",
+        "description": "Featured customer journey from marketing ads to website, WhatsApp, dashboard and repeat customers.",
+        "suitableFor": [
+          "Growing businesses ready to scale",
+          "SMEs that need sales automation"
+        ],
+        "priceType": "custom",
+        "price": null,
+        "priceNote": "Solutions start from RM5,000+",
         "features": [
           "Premium Website",
           "WhatsApp AI Agent",
           "Meta Ads",
           "TikTok Marketing",
-          "Dashboard",
-          "Monthly Reporting"
-        ]
+          "Dashboard & Analytics",
+          "Automation & Integrations",
+          "Monthly Reporting",
+          "Strategy Consultation"
+        ],
+        "featured": true,
+        "ctaText": "Chat on WhatsApp",
+        "ctaType": "whatsapp"
+      },
+      {
+        "id": "ecommerce-website",
+        "title": "E-Commerce Website",
+        "group": "Most Popular Packages",
+        "category": "Web & Development",
+        "filter": "web",
+        "badge": "BEST VALUE",
+        "icon": "🛒",
+        "description": "Online store setup with customer accounts, secure checkout and marketing tracking.",
+        "suitableFor": [
+          "Online stores",
+          "Retailers",
+          "Product brands"
+        ],
+        "priceType": "custom",
+        "price": null,
+        "priceNote": "Solutions start from RM5,000+",
+        "features": [
+          "Product Catalog",
+          "Cart & Secure Checkout",
+          "Payment Gateway (FPX, TNG, GrabPay)",
+          "Order Dashboard",
+          "Customer Login",
+          "Marketing Tracking & Analytics"
+        ],
+        "featured": false,
+        "ctaText": "Chat on WhatsApp",
+        "ctaType": "whatsapp"
+      },
+      {
+        "id": "business-website",
+        "title": "Business Website",
+        "group": "Web & Development Packages",
+        "category": "Web & Development",
+        "filter": "web",
+        "badge": "BUSINESS",
+        "icon": "🏢",
+        "description": "A conversion-focused website for SMEs that need trust, leads and clear service pages.",
+        "suitableFor": [
+          "SMEs",
+          "Clinics",
+          "Tuition centres",
+          "Service companies"
+        ],
+        "priceType": "fixed",
+        "price": 1999,
+        "pricePrefix": "From",
+        "priceNote": "One-time project",
+        "features": [
+          "Up to 8 business pages",
+          "Mobile responsive layout",
+          "Lead capture forms",
+          "WhatsApp integration",
+          "Google Maps section",
+          "SEO-ready page structure",
+          "Analytics tracking setup"
+        ],
+        "featured": false,
+        "ctaText": "Choose Package",
+        "ctaType": "cart"
+      },
+      {
+        "id": "premium-website",
+        "title": "Premium Website",
+        "group": "Web & Development Packages",
+        "category": "Web & Development",
+        "filter": "web",
+        "badge": "PREMIUM",
+        "icon": "💎",
+        "description": "A polished premium website with stronger strategy, content flow and conversion sections.",
+        "suitableFor": [
+          "Established SMEs",
+          "Brands repositioning online",
+          "High-trust service providers"
+        ],
+        "priceType": "fixed",
+        "price": 4999,
+        "pricePrefix": "From",
+        "priceNote": "One-time project",
+        "features": [
+          "Custom premium design",
+          "Up to 15 pages",
+          "Conversion copy structure",
+          "Landing pages for campaigns",
+          "Analytics and pixel setup",
+          "Basic automation handoff",
+          "Launch QA checklist"
+        ],
+        "featured": true,
+        "ctaText": "Choose Package",
+        "ctaType": "cart"
+      },
+      {
+        "id": "custom-web-application",
+        "title": "Custom Web Application",
+        "group": "Web & Development Packages",
+        "category": "Web & Development",
+        "filter": "web",
+        "badge": "CUSTOM APP",
+        "icon": "🧩",
+        "description": "Tailored web systems, portals and business tools built around your workflow.",
+        "suitableFor": [
+          "Operations teams",
+          "Internal portals",
+          "Custom business workflows"
+        ],
+        "priceType": "custom",
+        "price": null,
+        "priceNote": "Solutions start from RM5,000+",
+        "features": [
+          "Requirement discovery",
+          "Custom database design",
+          "Admin dashboard",
+          "Role-based access",
+          "Workflow automation",
+          "API integrations",
+          "Deployment support"
+        ],
+        "featured": false,
+        "ctaText": "Chat on WhatsApp",
+        "ctaType": "whatsapp"
+      },
+      {
+        "id": "mobile-application",
+        "title": "Mobile Application",
+        "group": "Web & Development Packages",
+        "category": "Web & Development",
+        "filter": "web",
+        "badge": "MOBILE APP",
+        "icon": "📱",
+        "description": "Custom mobile app planning and development for customer or internal business use.",
+        "suitableFor": [
+          "Customer apps",
+          "Field teams",
+          "Booking and service flows"
+        ],
+        "priceType": "custom",
+        "price": null,
+        "priceNote": "Solutions start from RM5,000+",
+        "features": [
+          "App scope planning",
+          "UX screens and flows",
+          "API-ready architecture",
+          "Admin panel planning",
+          "Push notification planning",
+          "Testing checklist",
+          "Launch consultation"
+        ],
+        "featured": false,
+        "ctaText": "Chat on WhatsApp",
+        "ctaType": "whatsapp"
+      },
+      {
+        "id": "seo-starter",
+        "title": "SEO Starter",
+        "group": "Marketing & Growth Services",
+        "category": "Marketing & Growth",
+        "filter": "marketing",
+        "badge": "SEO",
+        "icon": "🔎",
+        "description": "Foundational SEO improvements for small websites that need better visibility.",
+        "suitableFor": [
+          "New websites",
+          "Local service providers",
+          "Small business pages"
+        ],
+        "priceType": "monthly",
+        "price": 499,
+        "priceNote": "Monthly Subscription",
+        "features": [
+          "Keyword basics",
+          "Meta title and description updates",
+          "Technical SEO checklist",
+          "Monthly performance notes",
+          "Google Search Console setup"
+        ],
+        "featured": false,
+        "ctaText": "Subscribe",
+        "ctaType": "cart"
+      },
+      {
+        "id": "seo-growth",
+        "title": "SEO Growth",
+        "group": "Marketing & Growth Services",
+        "category": "Marketing & Growth",
+        "filter": "marketing",
+        "badge": "GROWTH",
+        "icon": "📈",
+        "description": "Ongoing SEO content and optimisation support to grow search traffic.",
+        "suitableFor": [
+          "SMEs growing traffic",
+          "Content-led websites",
+          "Service businesses"
+        ],
+        "priceType": "monthly",
+        "price": 999,
+        "priceNote": "Monthly Subscription",
+        "features": [
+          "Keyword plan",
+          "On-page optimisation",
+          "Content recommendations",
+          "Technical SEO monitoring",
+          "Monthly SEO report",
+          "Competitor tracking"
+        ],
+        "featured": true,
+        "ctaText": "Subscribe",
+        "ctaType": "cart"
+      },
+      {
+        "id": "tiktok-marketing",
+        "title": "TikTok Marketing",
+        "group": "Marketing & Growth Services",
+        "category": "Marketing & Growth",
+        "filter": "marketing",
+        "badge": "TIKTOK",
+        "icon": "🎵",
+        "description": "Starter TikTok presence with posting plan, hashtag research and performance reporting.",
+        "suitableFor": [
+          "Small brands",
+          "Home businesses",
+          "Campaign launches"
+        ],
+        "priceType": "monthly",
+        "price": 799,
+        "priceNote": "Monthly Subscription",
+        "features": [
+          "8 posts",
+          "Content calendar",
+          "Hashtag research",
+          "Basic creative direction",
+          "Monthly report"
+        ],
+        "featured": false,
+        "ctaText": "Subscribe",
+        "ctaType": "cart"
+      },
+      {
+        "id": "meta-ads-management",
+        "title": "Meta Ads Management",
+        "group": "Marketing & Growth Services",
+        "category": "Marketing & Growth",
+        "filter": "marketing",
+        "badge": "ADS",
+        "icon": "🎯",
+        "description": "Retargeting and campaign testing for stronger paid acquisition on Meta platforms.",
+        "suitableFor": [
+          "Lead generation",
+          "Campaign testing",
+          "Growing service brands"
+        ],
+        "priceType": "monthly",
+        "price": 1299,
+        "priceNote": "Monthly Subscription",
+        "features": [
+          "Campaign setup",
+          "Audience targeting",
+          "Creative testing plan",
+          "Retargeting structure",
+          "Monthly optimisation report"
+        ],
+        "featured": false,
+        "ctaText": "Subscribe",
+        "ctaType": "cart"
+      },
+      {
+        "id": "content-creation",
+        "title": "Content Creation",
+        "group": "Marketing & Growth Services",
+        "category": "Marketing & Growth",
+        "filter": "marketing",
+        "badge": "CONTENT",
+        "icon": "✍️",
+        "description": "Simple monthly content support to keep your business visible and consistent online.",
+        "suitableFor": [
+          "SMEs",
+          "Founders",
+          "Small marketing teams"
+        ],
+        "priceType": "monthly",
+        "price": 499,
+        "priceNote": "Monthly Subscription",
+        "features": [
+          "Content ideas",
+          "Social captions",
+          "Basic visuals guidance",
+          "Posting calendar",
+          "Monthly review"
+        ],
+        "featured": false,
+        "ctaText": "Subscribe",
+        "ctaType": "cart"
+      },
+      {
+        "id": "whatsapp-starter",
+        "title": "WhatsApp Starter",
+        "group": "Automation & AI Services",
+        "category": "Automation & AI",
+        "filter": "automation",
+        "badge": "SETUP",
+        "icon": "💬",
+        "description": "Simple WhatsApp lead capture and auto-reply setup for quick customer response.",
+        "suitableFor": [
+          "Small teams",
+          "Service businesses",
+          "Lead capture"
+        ],
+        "priceType": "fixed",
+        "price": 499,
+        "priceNote": "setup",
+        "features": [
+          "WhatsApp button setup",
+          "Auto greeting flow",
+          "Basic FAQ replies",
+          "Lead capture fields",
+          "Google Sheet storage"
+        ],
+        "featured": false,
+        "ctaText": "Choose Package",
+        "ctaType": "cart"
+      },
+      {
+        "id": "whatsapp-ai-agent",
+        "title": "WhatsApp AI Agent",
+        "group": "Automation & AI Services",
+        "category": "Automation & AI",
+        "filter": "automation",
+        "badge": "AI AGENT",
+        "icon": "🤖",
+        "description": "AI-powered WhatsApp assistant for enquiries, qualification and appointment requests.",
+        "suitableFor": [
+          "Busy sales teams",
+          "Service businesses",
+          "Appointment-based companies"
+        ],
+        "priceType": "fixed",
+        "price": 1499,
+        "priceNote": "setup",
+        "features": [
+          "AI greeting and FAQ",
+          "Lead qualification",
+          "Product or service answers",
+          "Appointment request flow",
+          "Conversation handoff"
+        ],
+        "featured": true,
+        "ctaText": "Choose Package",
+        "ctaType": "cart"
+      },
+      {
+        "id": "ai-faq-bot",
+        "title": "AI FAQ Bot",
+        "group": "Automation & AI Services",
+        "category": "Automation & AI",
+        "filter": "automation",
+        "badge": "FAQ",
+        "icon": "💡",
+        "description": "A focused FAQ assistant that answers common customer questions automatically.",
+        "suitableFor": [
+          "Support teams",
+          "Website enquiries",
+          "Repeating questions"
+        ],
+        "priceType": "fixed",
+        "price": 999,
+        "priceNote": "setup",
+        "features": [
+          "FAQ knowledge setup",
+          "Business info training",
+          "Website or WhatsApp flow",
+          "Fallback contact path",
+          "Basic testing"
+        ],
+        "featured": false,
+        "ctaText": "Choose Package",
+        "ctaType": "cart"
+      },
+      {
+        "id": "ai-sales-agent",
+        "title": "AI Sales Agent",
+        "group": "Automation & AI Services",
+        "category": "Automation & AI",
+        "filter": "automation",
+        "badge": "SALES AI",
+        "icon": "🧠",
+        "description": "A smarter sales agent flow to qualify leads, guide choices and request quotations.",
+        "suitableFor": [
+          "Sales-driven SMEs",
+          "High-volume enquiries",
+          "Lead qualification"
+        ],
+        "priceType": "fixed",
+        "price": 2999,
+        "priceNote": "setup",
+        "features": [
+          "Sales qualification flow",
+          "Service recommendation logic",
+          "Quotation request capture",
+          "CRM or sheet handoff",
+          "Testing and refinement"
+        ],
+        "featured": false,
+        "ctaText": "Choose Package",
+        "ctaType": "cart"
+      },
+      {
+        "id": "enterprise-ai-automation",
+        "title": "Enterprise AI Automation",
+        "group": "Automation & AI Services",
+        "category": "Automation & AI",
+        "filter": "automation",
+        "badge": "ENTERPRISE",
+        "icon": "⚙️",
+        "description": "Custom AI automation across teams, tools, documents and customer operations.",
+        "suitableFor": [
+          "Enterprise workflows",
+          "Multi-step operations",
+          "Custom integrations"
+        ],
+        "priceType": "custom",
+        "price": null,
+        "priceNote": "Solutions start from RM5,000+",
+        "features": [
+          "Automation discovery",
+          "AI workflow design",
+          "Tool integrations",
+          "Data handling plan",
+          "Dashboard handoff",
+          "Team training"
+        ],
+        "featured": false,
+        "ctaText": "Chat on WhatsApp",
+        "ctaType": "whatsapp"
+      },
+      {
+        "id": "workflow-automation",
+        "title": "Workflow Automation",
+        "group": "Automation & AI Services",
+        "category": "Automation & AI",
+        "filter": "automation",
+        "badge": "WORKFLOW",
+        "icon": "🔁",
+        "description": "Automate repetitive tasks between forms, sheets, emails, WhatsApp and dashboards.",
+        "suitableFor": [
+          "Operations teams",
+          "Admin-heavy workflows",
+          "Growing SMEs"
+        ],
+        "priceType": "custom",
+        "price": null,
+        "priceNote": "Solutions start from RM5,000+",
+        "features": [
+          "Process mapping",
+          "Form and sheet automation",
+          "Notification flows",
+          "Approval steps",
+          "Reporting handoff",
+          "Documentation"
+        ],
+        "featured": false,
+        "ctaText": "Chat on WhatsApp",
+        "ctaType": "whatsapp"
+      },
+      {
+        "id": "google-analytics-setup",
+        "title": "Google Analytics Setup",
+        "group": "Data & Analytics Services",
+        "category": "Data & Analytics",
+        "filter": "data",
+        "badge": "GA4",
+        "icon": "📊",
+        "description": "Basic analytics tracking setup so your website performance can be measured.",
+        "suitableFor": [
+          "New websites",
+          "Landing pages",
+          "Campaign tracking"
+        ],
+        "priceType": "fixed",
+        "price": 299,
+        "priceNote": "One-time setup",
+        "features": [
+          "GA4 setup",
+          "Basic event tracking",
+          "Conversion goal setup",
+          "Search Console connection",
+          "Testing checklist"
+        ],
+        "featured": false,
+        "ctaText": "Choose Package",
+        "ctaType": "cart"
+      },
+      {
+        "id": "looker-studio-dashboard",
+        "title": "Looker Studio Dashboard",
+        "group": "Data & Analytics Services",
+        "category": "Data & Analytics",
+        "filter": "data",
+        "badge": "LOOKER",
+        "icon": "📈",
+        "description": "A clean reporting dashboard for marketing, website or sales performance.",
+        "suitableFor": [
+          "Marketing reports",
+          "Founder dashboards",
+          "Monthly reporting"
+        ],
+        "priceType": "fixed",
+        "price": 799,
+        "priceNote": "One-time setup",
+        "features": [
+          "Dashboard layout",
+          "Data source connection",
+          "KPI scorecards",
+          "Trend charts",
+          "Shareable report link"
+        ],
+        "featured": false,
+        "ctaText": "Choose Package",
+        "ctaType": "cart"
+      },
+      {
+        "id": "power-bi-dashboard",
+        "title": "Power BI Dashboard",
+        "group": "Data & Analytics Services",
+        "category": "Data & Analytics",
+        "filter": "data",
+        "badge": "POWER BI",
+        "icon": "📉",
+        "description": "Professional Power BI dashboard for business reporting and decision support.",
+        "suitableFor": [
+          "SMEs",
+          "Finance reports",
+          "Sales teams"
+        ],
+        "priceType": "fixed",
+        "price": 1999,
+        "priceNote": "One-time setup",
+        "features": [
+          "Data model setup",
+          "KPI dashboard",
+          "Interactive filters",
+          "Report design",
+          "Publishing guidance"
+        ],
+        "featured": true,
+        "ctaText": "Choose Package",
+        "ctaType": "cart"
+      },
+      {
+        "id": "executive-dashboard",
+        "title": "Executive Dashboard",
+        "group": "Data & Analytics Services",
+        "category": "Data & Analytics",
+        "filter": "data",
+        "badge": "EXECUTIVE",
+        "icon": "🏆",
+        "description": "High-level executive dashboard for owners and managers to track business health.",
+        "suitableFor": [
+          "Business owners",
+          "Management teams",
+          "Monthly reviews"
+        ],
+        "priceType": "fixed",
+        "price": 3999,
+        "priceNote": "One-time setup",
+        "features": [
+          "Executive KPI design",
+          "Sales and operations view",
+          "Automated data refresh plan",
+          "Insights summary blocks",
+          "Presentation-ready layout"
+        ],
+        "featured": false,
+        "ctaText": "Choose Package",
+        "ctaType": "cart"
+      },
+      {
+        "id": "enterprise-reporting",
+        "title": "Enterprise Reporting",
+        "group": "Data & Analytics Services",
+        "category": "Data & Analytics",
+        "filter": "data",
+        "badge": "CUSTOM",
+        "icon": "🗂️",
+        "description": "Custom reporting systems across departments, sources and management needs.",
+        "suitableFor": [
+          "Multi-source reporting",
+          "Leadership teams",
+          "Operational reporting"
+        ],
+        "priceType": "custom",
+        "price": null,
+        "priceNote": "Solutions start from RM5,000+",
+        "features": [
+          "Reporting discovery",
+          "Data source mapping",
+          "Dashboard architecture",
+          "Role-based views",
+          "Automation planning",
+          "Team handover"
+        ],
+        "featured": false,
+        "ctaText": "Chat on WhatsApp",
+        "ctaType": "whatsapp"
+      },
+      {
+        "id": "aws-migration",
+        "title": "AWS Migration",
+        "group": "Cloud & DevOps Services",
+        "category": "Cloud & DevOps",
+        "filter": "cloud",
+        "badge": "AWS",
+        "icon": "☁️",
+        "description": "Plan and migrate workloads to AWS with practical reliability and cost guidance.",
+        "suitableFor": [
+          "Growing platforms",
+          "Legacy hosting moves",
+          "Cloud migration"
+        ],
+        "priceType": "custom",
+        "price": null,
+        "priceNote": "Solutions start from RM5,000+",
+        "features": [
+          "Migration assessment",
+          "Architecture planning",
+          "Deployment checklist",
+          "Security basics",
+          "Cost review",
+          "Post-migration support"
+        ],
+        "featured": false,
+        "ctaText": "Chat on WhatsApp",
+        "ctaType": "whatsapp"
+      },
+      {
+        "id": "azure-migration",
+        "title": "Azure Migration",
+        "group": "Cloud & DevOps Services",
+        "category": "Cloud & DevOps",
+        "filter": "cloud",
+        "badge": "AZURE",
+        "icon": "🌐",
+        "description": "Move apps and services into Microsoft Azure with structured setup and support.",
+        "suitableFor": [
+          "Microsoft ecosystems",
+          "SME cloud migration",
+          "Application hosting"
+        ],
+        "priceType": "custom",
+        "price": null,
+        "priceNote": "Solutions start from RM5,000+",
+        "features": [
+          "Azure setup planning",
+          "Migration path",
+          "App service guidance",
+          "Security checklist",
+          "Monitoring setup",
+          "Handover support"
+        ],
+        "featured": false,
+        "ctaText": "Chat on WhatsApp",
+        "ctaType": "whatsapp"
+      },
+      {
+        "id": "cloud-architecture",
+        "title": "Cloud Architecture",
+        "group": "Cloud & DevOps Services",
+        "category": "Cloud & DevOps",
+        "filter": "cloud",
+        "badge": "ARCHITECTURE",
+        "icon": "🏗️",
+        "description": "Cloud architecture design for scalable, secure and maintainable systems.",
+        "suitableFor": [
+          "New platforms",
+          "Scaling apps",
+          "Technical teams"
+        ],
+        "priceType": "custom",
+        "price": null,
+        "priceNote": "Solutions start from RM5,000+",
+        "features": [
+          "Architecture review",
+          "Scalability planning",
+          "Security model",
+          "Cost-conscious design",
+          "Deployment roadmap",
+          "Technical documentation"
+        ],
+        "featured": true,
+        "ctaText": "Chat on WhatsApp",
+        "ctaType": "whatsapp"
+      },
+      {
+        "id": "kubernetes-setup",
+        "title": "Kubernetes Setup",
+        "group": "Cloud & DevOps Services",
+        "category": "Cloud & DevOps",
+        "filter": "cloud",
+        "badge": "K8S",
+        "icon": "🧱",
+        "description": "Container orchestration setup for teams that need resilient app deployment.",
+        "suitableFor": [
+          "Engineering teams",
+          "Containerised apps",
+          "Scaling platforms"
+        ],
+        "priceType": "custom",
+        "price": null,
+        "priceNote": "Solutions start from RM5,000+",
+        "features": [
+          "Cluster planning",
+          "Deployment manifests",
+          "Ingress and routing",
+          "Monitoring basics",
+          "Security guidance",
+          "Runbook handover"
+        ],
+        "featured": false,
+        "ctaText": "Chat on WhatsApp",
+        "ctaType": "whatsapp"
+      },
+      {
+        "id": "devops-pipeline",
+        "title": "DevOps Pipeline",
+        "group": "Cloud & DevOps Services",
+        "category": "Cloud & DevOps",
+        "filter": "cloud",
+        "badge": "CI/CD",
+        "icon": "🚀",
+        "description": "Automated deployment pipeline to ship changes faster and more safely.",
+        "suitableFor": [
+          "Web apps",
+          "Software teams",
+          "Release automation"
+        ],
+        "priceType": "custom",
+        "price": null,
+        "priceNote": "Solutions start from RM5,000+",
+        "features": [
+          "Pipeline planning",
+          "Build and deploy workflow",
+          "Environment configuration",
+          "Rollback planning",
+          "Secrets guidance",
+          "Documentation"
+        ],
+        "featured": false,
+        "ctaText": "Chat on WhatsApp",
+        "ctaType": "whatsapp"
+      },
+      {
+        "id": "infrastructure-automation",
+        "title": "Infrastructure Automation",
+        "group": "Cloud & DevOps Services",
+        "category": "Cloud & DevOps",
+        "filter": "cloud",
+        "badge": "IaC",
+        "icon": "🛠️",
+        "description": "Infrastructure-as-code planning and implementation for repeatable environments.",
+        "suitableFor": [
+          "Cloud teams",
+          "Multi-environment apps",
+          "Scaling operations"
+        ],
+        "priceType": "custom",
+        "price": null,
+        "priceNote": "Solutions start from RM5,000+",
+        "features": [
+          "Infrastructure planning",
+          "IaC templates",
+          "Environment setup",
+          "Access and secrets review",
+          "Change workflow",
+          "Technical handover"
+        ],
+        "featured": false,
+        "ctaText": "Chat on WhatsApp",
+        "ctaType": "whatsapp"
+      },
+      {
+        "id": "security-assessment",
+        "title": "Security Assessment",
+        "group": "Cloud & DevOps Services",
+        "category": "Cloud & DevOps",
+        "filter": "cloud",
+        "badge": "SECURITY",
+        "icon": "🔐",
+        "description": "Review cloud, web and deployment posture to identify important security risks.",
+        "suitableFor": [
+          "SMEs online",
+          "Cloud apps",
+          "Compliance-minded teams"
+        ],
+        "priceType": "custom",
+        "price": null,
+        "priceNote": "Solutions start from RM5,000+",
+        "features": [
+          "Security review",
+          "Access control check",
+          "Deployment risk notes",
+          "Backup and recovery review",
+          "Priority action list",
+          "Consultation session"
+        ],
+        "featured": false,
+        "ctaText": "Chat on WhatsApp",
+        "ctaType": "whatsapp"
+      },
+      {
+        "id": "website-testing",
+        "title": "Website Testing",
+        "group": "Testing & QA Services",
+        "category": "Testing & QA",
+        "filter": "testing",
+        "badge": "QA",
+        "icon": "✅",
+        "description": "Manual website testing across pages, forms, responsiveness and key journeys.",
+        "suitableFor": [
+          "New websites",
+          "Landing pages",
+          "Website relaunches"
+        ],
+        "priceType": "fixed",
+        "price": 499,
+        "priceNote": "One-time test cycle",
+        "features": [
+          "Responsive checks",
+          "Form testing",
+          "Navigation review",
+          "Browser checks",
+          "Issue report",
+          "Retest notes"
+        ],
+        "featured": false,
+        "ctaText": "Choose Package",
+        "ctaType": "cart"
+      },
+      {
+        "id": "mobile-testing",
+        "title": "Mobile Testing",
+        "group": "Testing & QA Services",
+        "category": "Testing & QA",
+        "filter": "testing",
+        "badge": "MOBILE QA",
+        "icon": "📲",
+        "description": "Mobile-focused QA for apps, responsive websites and customer journeys.",
+        "suitableFor": [
+          "Mobile apps",
+          "Responsive websites",
+          "Campaign pages"
+        ],
+        "priceType": "fixed",
+        "price": 999,
+        "priceNote": "One-time test cycle",
+        "features": [
+          "Device checklist",
+          "UI and usability review",
+          "Form and CTA testing",
+          "Critical flow testing",
+          "Bug report",
+          "Retest summary"
+        ],
+        "featured": false,
+        "ctaText": "Choose Package",
+        "ctaType": "cart"
+      },
+      {
+        "id": "uat-support",
+        "title": "UAT Support",
+        "group": "Testing & QA Services",
+        "category": "Testing & QA",
+        "filter": "testing",
+        "badge": "UAT",
+        "icon": "🧪",
+        "description": "Structured user acceptance testing support before launch or handover.",
+        "suitableFor": [
+          "System launches",
+          "Client acceptance",
+          "Internal teams"
+        ],
+        "priceType": "fixed",
+        "price": 1499,
+        "priceNote": "One-time support",
+        "features": [
+          "UAT checklist",
+          "Scenario preparation",
+          "Issue logging",
+          "Stakeholder coordination",
+          "Retest support",
+          "Sign-off summary"
+        ],
+        "featured": true,
+        "ctaText": "Choose Package",
+        "ctaType": "cart"
+      },
+      {
+        "id": "test-automation-framework",
+        "title": "Test Automation Framework",
+        "group": "Testing & QA Services",
+        "category": "Testing & QA",
+        "filter": "testing",
+        "badge": "AUTOMATION",
+        "icon": "🤖",
+        "description": "Automated test framework planning and setup for repeatable regression testing.",
+        "suitableFor": [
+          "Software teams",
+          "Growing apps",
+          "Regression-heavy products"
+        ],
+        "priceType": "custom",
+        "price": null,
+        "priceNote": "Solutions start from RM5,000+",
+        "features": [
+          "Automation strategy",
+          "Framework setup",
+          "Critical test scripts",
+          "CI pipeline guidance",
+          "Reporting setup",
+          "Team handover"
+        ],
+        "featured": false,
+        "ctaText": "Chat on WhatsApp",
+        "ctaType": "whatsapp"
+      },
+      {
+        "id": "outsourced-qa-team",
+        "title": "Outsourced QA Team",
+        "group": "Testing & QA Services",
+        "category": "Testing & QA",
+        "filter": "testing",
+        "badge": "QA TEAM",
+        "icon": "👥",
+        "description": "Dedicated QA support for projects that need ongoing testing capacity.",
+        "suitableFor": [
+          "Agencies",
+          "Software teams",
+          "Ongoing product work"
+        ],
+        "priceType": "custom",
+        "price": null,
+        "priceNote": "Solutions start from RM5,000+",
+        "features": [
+          "QA planning",
+          "Manual test execution",
+          "Bug reports",
+          "Regression testing",
+          "UAT coordination",
+          "Monthly quality review"
+        ],
+        "featured": false,
+        "ctaText": "Chat on WhatsApp",
+        "ctaType": "whatsapp"
       }
     ]
   }
