@@ -74,7 +74,7 @@ class ShopPage {
         <a href="index.html#services">Solutions</a>
         <div class="nav-dropdown"><button type="button" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">Client Work ▾</button><div class="dropdown-menu">${clientLinks}</div></div>
         <a class="active" href="shop.html">Shop</a><a href="index.html#about">About</a><div class="nav-dropdown"><button type="button" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">Contact ▾</button><div class="dropdown-menu"><a href="index.html#contact">Contact</a><a href="careers.html">Careers</a></div></div>
-      </nav>
+      <div class="mobile-menu-tools"><span class="mobile-menu-tools-title">Display</span><button class="mobile-theme-row" type="button" data-theme-toggle aria-label="Toggle theme"><span class="theme-switch-control"><span class="theme-switch-thumb" data-theme-icon>🌙</span></span><strong>Theme</strong></button>${window.HDSI18n?.controlHtml?.() || ''}</div></nav>
       <div class="nav-actions"><button class="theme-switch" type="button" data-theme-toggle aria-label="Toggle theme"><span class="theme-switch-control"><span class="theme-switch-thumb" data-theme-icon>🌙</span></span></button><a class="btn btn-primary btn-small" href="index.html#booking">Book a Call</a>${window.HDSI18n?.controlHtml?.() || ''}<label class="nav-currency-control" aria-label="Currency"><span class="sr-only">Currency</span><select data-currency-select>${currencyOptions}</select></label><button class="menu-toggle" data-menu-toggle aria-label="Open menu">☰</button></div>
     </div></header>`;
   }
@@ -181,7 +181,7 @@ class ShopPage {
   }
 
   bindEvents() {
-    document.querySelector('[data-theme-toggle]')?.addEventListener('click', () => this.theme.toggle());
+    document.querySelectorAll('[data-theme-toggle]').forEach(btn => btn.addEventListener('click', () => this.theme.toggle()));
     this.bindMobileMenu();
     this.bindDropdowns();
     document.querySelector('[data-currency-select]')?.addEventListener('change', e => {
