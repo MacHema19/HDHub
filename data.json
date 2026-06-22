@@ -1388,6 +1388,184 @@
         "featured": false,
         "ctaText": "Chat on WhatsApp",
         "ctaType": "whatsapp"
+      },
+      {
+        "id": "brand-identity-starter",
+        "title": "Brand Identity Starter",
+        "group": "Design & Branding Services",
+        "category": "Design & Branding",
+        "filter": "design",
+        "badge": "BRANDING",
+        "icon": "🎨",
+        "description": "Core brand visuals and direction for small businesses that need a professional market presence.",
+        "suitableFor": [
+          "New businesses",
+          "SMEs",
+          "Service brands"
+        ],
+        "priceType": "fixed",
+        "price": 799,
+        "pricePrefix": "From",
+        "priceNote": "Starting Price",
+        "features": [
+          "Logo refresh direction",
+          "Brand colour palette",
+          "Typography recommendation",
+          "Social media profile kit",
+          "Basic brand usage guide",
+          "WhatsApp-ready brand assets"
+        ],
+        "featured": false,
+        "ctaText": "Choose Package",
+        "ctaType": "cart"
+      },
+      {
+        "id": "ui-ux-design-package",
+        "title": "UI/UX Design Package",
+        "group": "Design & Branding Services",
+        "category": "Design & Branding",
+        "filter": "design",
+        "badge": "UI/UX",
+        "icon": "🧩",
+        "description": "Clean interface design for websites, dashboards and business apps before development starts.",
+        "suitableFor": [
+          "Web projects",
+          "App redesigns",
+          "Dashboard builds"
+        ],
+        "priceType": "fixed",
+        "price": 1499,
+        "pricePrefix": "From",
+        "priceNote": "Starting Price",
+        "features": [
+          "User flow planning",
+          "Responsive page layouts",
+          "Wireframe direction",
+          "High-fidelity UI screens",
+          "CTA and conversion layout",
+          "Developer handoff notes"
+        ],
+        "featured": true,
+        "ctaText": "Choose Package",
+        "ctaType": "cart"
+      },
+      {
+        "id": "creative-brand-system",
+        "title": "Creative Brand System",
+        "group": "Design & Branding Services",
+        "category": "Design & Branding",
+        "filter": "design",
+        "badge": "CUSTOM",
+        "icon": "✨",
+        "description": "Complete visual brand system for businesses preparing to scale campaigns, websites and sales channels.",
+        "suitableFor": [
+          "Growing SMEs",
+          "Product launches",
+          "Campaign brands"
+        ],
+        "priceType": "custom",
+        "price": null,
+        "priceNote": "Solutions start from RM5,000+",
+        "features": [
+          "Brand strategy workshop",
+          "Visual identity system",
+          "Campaign creative direction",
+          "Website design direction",
+          "Social media templates",
+          "Brand handover guide"
+        ],
+        "featured": false,
+        "ctaText": "Chat on WhatsApp",
+        "ctaType": "whatsapp"
+      },
+      {
+        "id": "ai-business-training",
+        "title": "AI Business Training",
+        "group": "Training & Consulting Services",
+        "category": "Training & Consulting",
+        "filter": "training",
+        "badge": "TRAINING",
+        "icon": "🎓",
+        "description": "Practical AI and automation training for teams that want to improve daily business workflows.",
+        "suitableFor": [
+          "SME teams",
+          "Sales teams",
+          "Admin teams"
+        ],
+        "priceType": "fixed",
+        "price": 999,
+        "pricePrefix": "From",
+        "priceNote": "Per session",
+        "features": [
+          "AI tool walkthrough",
+          "Prompting for business tasks",
+          "Workflow improvement ideas",
+          "WhatsApp and content use cases",
+          "Team Q&A",
+          "Action plan summary"
+        ],
+        "featured": false,
+        "ctaText": "Choose Package",
+        "ctaType": "cart"
+      },
+      {
+        "id": "digital-transformation-consulting",
+        "title": "Digital Transformation Consulting",
+        "group": "Training & Consulting Services",
+        "category": "Training & Consulting",
+        "filter": "training",
+        "badge": "CONSULTING",
+        "icon": "💼",
+        "description": "Consulting support to plan the right website, automation, data and growth systems for your business.",
+        "suitableFor": [
+          "Business owners",
+          "Operations teams",
+          "Management teams"
+        ],
+        "priceType": "fixed",
+        "price": 1499,
+        "pricePrefix": "From",
+        "priceNote": "Consulting package",
+        "features": [
+          "Current process review",
+          "Digital roadmap planning",
+          "Automation opportunity mapping",
+          "Tool and platform recommendation",
+          "Priority implementation plan",
+          "Management briefing"
+        ],
+        "featured": true,
+        "ctaText": "Choose Package",
+        "ctaType": "cart"
+      },
+      {
+        "id": "enterprise-training-program",
+        "title": "Enterprise Training Program",
+        "group": "Training & Consulting Services",
+        "category": "Training & Consulting",
+        "filter": "training",
+        "badge": "CUSTOM",
+        "icon": "🏢",
+        "description": "Custom training and advisory program for organizations needing structured digital adoption.",
+        "suitableFor": [
+          "Enterprise teams",
+          "Multi-department teams",
+          "Long-term adoption"
+        ],
+        "priceType": "custom",
+        "price": null,
+        "priceNote": "Solutions start from RM5,000+",
+        "features": [
+          "Training needs assessment",
+          "Custom module planning",
+          "Hands-on workshops",
+          "Leadership consultation",
+          "Team adoption guidance",
+          "Post-training report"
+        ],
+        "featured": false,
+        "ctaText": "Chat on WhatsApp",
+        "ctaType": "whatsapp"
       }
     ]
   }
