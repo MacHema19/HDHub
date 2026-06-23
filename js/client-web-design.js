@@ -88,7 +88,7 @@ class ClientDesignPage {
             <div class="nav-dropdown"><button type="button" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">Services ▾</button><div class="dropdown-menu"><a href="index.html#services">Service Categories</a><a href="shop.html">Packages</a><a href="index.html#growth-engine">Growth Engine</a></div></div>
             <a href="index.html#services">Solutions</a>
             <div class="nav-dropdown"><button type="button" class="dropdown-trigger active" aria-haspopup="true" aria-expanded="false">Client Work ▾</button><div class="dropdown-menu">${menuItems}</div></div>
-            <a href="shop.html">Shop</a><a href="index.html#about">About</a><div class="nav-dropdown"><button type="button" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">Contact ▾</button><div class="dropdown-menu"><a href="index.html#contact">Contact</a><a href="careers.html">Careers</a></div></div>
+            <a href="shop.html">Shop</a><a href="affiliate.html">Affiliate</a><a href="index.html#about">About</a><div class="nav-dropdown"><button type="button" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">Contact ▾</button><div class="dropdown-menu"><a href="index.html#contact">Contact</a><a href="careers.html">Careers</a></div></div>
           <div class="mobile-menu-tools"><span class="mobile-menu-tools-title">Display</span><button class="mobile-theme-row" type="button" data-theme-toggle aria-label="Toggle theme"><span class="theme-switch-control"><span class="theme-switch-thumb" data-theme-icon>🌙</span></span><strong>Theme</strong></button></div></nav>
           <div class="nav-actions"><button class="theme-switch" type="button" data-theme-toggle aria-label="Toggle theme"><span class="theme-switch-control"><span class="theme-switch-thumb" data-theme-icon>🌙</span></span></button><a class="btn btn-primary btn-small" href="index.html#booking">Book a Call</a><button class="menu-toggle" data-menu-toggle aria-label="Open menu">☰</button></div>
         </div>
@@ -136,7 +136,7 @@ class ClientDesignPage {
             <p>AI-powered digital marketing and tech consultancy for websites, automation, cloud, training and business growth.</p>
           </div>
           <div><h4>Services</h4><a href="index.html#services">All Services</a><a href="index.html#services">Web Solutions</a><a href="index.html#services">AI & Automation</a></div>
-          <div><h4>Company</h4><a href="index.html#about">About Us</a><a href="index.html#services">Services</a><a href="index.html#portfolio">Impact Vault</a><a href="index.html#careers">Careers</a></div>
+          <div><h4>Company</h4><a href="index.html#about">About Us</a><a href="index.html#services">Services</a><a href="index.html#portfolio">Impact Vault</a><a href="affiliate.html">Affiliate</a><a href="careers.html">Careers</a></div>
           <div><h4>Contact</h4><a href="tel:${business.phonePlain}">${business.phone}</a><a href="mailto:${business.email}">${business.email}</a><a href="https://wa.me/${business.whatsapp}" target="_blank" rel="noopener">WhatsApp Us</a></div>
         </div>
       </footer>`;
