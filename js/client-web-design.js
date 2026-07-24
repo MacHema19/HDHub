@@ -85,10 +85,11 @@ class ClientDesignPage {
           </a>
           <nav class="nav-links" data-nav-links>
             <a href="index.html#home">Home</a>
-            <div class="nav-dropdown"><button type="button" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">Services ▾</button><div class="dropdown-menu"><a href="index.html#services">Service Categories</a><a href="shop.html">Packages</a><a href="index.html#growth-engine">Growth Engine</a></div></div>
-            <a href="index.html#services">Solutions</a>
-            <div class="nav-dropdown"><button type="button" class="dropdown-trigger active" aria-haspopup="true" aria-expanded="false">Client Work ▾</button><div class="dropdown-menu">${menuItems}</div></div>
-            <a href="shop.html">Shop</a><a href="index.html#about">About</a><div class="nav-dropdown"><button type="button" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">Contact ▾</button><div class="dropdown-menu"><a href="index.html#contact">Contact</a><a href="careers.html">Careers</a></div></div>
+            <div class="nav-dropdown"><button type="button" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">Solutions ▾</button><div class="dropdown-menu"><a href="index.html#services">Service Categories</a><a href="shop.html">Packages</a><a href="index.html#growth-engine">Growth Engine</a></div></div>
+            <div class="nav-dropdown"><button type="button" class="dropdown-trigger active" aria-haspopup="true" aria-expanded="false">Client Portfolio ▾</button><div class="dropdown-menu">${menuItems}</div></div>
+            <a href="shop.html">Pricing</a>
+            <div class="nav-dropdown"><button type="button" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">Contact ▾</button><div class="dropdown-menu"><a href="index.html#contact">Contact</a><a href="index.html#about">About</a><a href="careers.html">Careers</a></div></div>
+            <div class="nav-dropdown kiki-nav-dropdown"><button type="button" class="dropdown-trigger kiki-nav-trigger" aria-haspopup="true" aria-expanded="false"><img class="kiki-nav-icon" src="assets/kiki-app-icon.png" alt="" aria-hidden="true"><span>Kiki Color App</span><span aria-hidden="true">▾</span></button><div class="dropdown-menu kiki-dropdown-menu"><a class="kiki-dropdown-link" href="mobileapp/kiki/privacy-policy/"><img src="assets/kiki-app-icon.png" alt="" aria-hidden="true"><span class="kiki-dropdown-copy"><strong>Privacy Policy</strong><small>Kiki Coloring</small></span></a></div></div>
           </nav>
           <div class="nav-actions"><button class="theme-switch" type="button" data-theme-toggle aria-label="Toggle theme"><span class="theme-switch-control"><span class="theme-switch-thumb" data-theme-icon>🌙</span></span></button><a class="btn btn-primary btn-small" href="index.html#booking">Book a Call</a>${window.HDSI18n?.controlHtml?.() || ""}<button class="menu-toggle" data-menu-toggle aria-label="Open menu">☰</button></div>
         </div>

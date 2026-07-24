@@ -21,10 +21,11 @@ class Header extends Component {
       <a href="#home" class="logo" aria-label="${business.name} home"><span class="logo-mark"><img class="logo-image" src="assets/cartoon-transparent.png" alt="" /></span><span><strong>${business.name}</strong><small>${business.tagline}</small></span></a>
       <nav class="nav-links" data-nav-links>
         <a class="active" href="#home">Home</a>
-        <div class="nav-dropdown"><button type="button" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">Services ▾</button><div class="dropdown-menu"><a href="#services">Service Categories</a><a href="shop.html">Packages</a><a href="#growth-engine">Growth Engine</a></div></div>
-        <a href="#services">Solutions</a>
-        <div class="nav-dropdown"><button type="button" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">Client Work ▾</button><div class="dropdown-menu">${clientLinks}</div></div>
-        <a href="shop.html">Shop</a><a href="#about">About</a><div class="nav-dropdown"><button type="button" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">Contact ▾</button><div class="dropdown-menu"><a href="#contact">Contact</a><a href="careers.html">Careers</a></div></div>
+        <div class="nav-dropdown"><button type="button" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">Solutions ▾</button><div class="dropdown-menu"><a href="#services">Service Categories</a><a href="shop.html">Packages</a><a href="#growth-engine">Growth Engine</a></div></div>
+        <div class="nav-dropdown"><button type="button" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">Client Portfolio ▾</button><div class="dropdown-menu">${clientLinks}</div></div>
+        <a href="shop.html">Pricing</a>
+        <div class="nav-dropdown"><button type="button" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">Contact ▾</button><div class="dropdown-menu"><a href="#contact">Contact</a><a href="#about">About</a><a href="careers.html">Careers</a></div></div>
+        <div class="nav-dropdown kiki-nav-dropdown"><button type="button" class="dropdown-trigger kiki-nav-trigger" aria-haspopup="true" aria-expanded="false"><img class="kiki-nav-icon" src="assets/kiki-app-icon.png" alt="" aria-hidden="true"><span>Kiki Color App</span><span aria-hidden="true">▾</span></button><div class="dropdown-menu kiki-dropdown-menu"><a class="kiki-dropdown-link" href="mobileapp/kiki/privacy-policy/"><img src="assets/kiki-app-icon.png" alt="" aria-hidden="true"><span class="kiki-dropdown-copy"><strong>Privacy Policy</strong><small>Kiki Coloring</small></span></a></div></div>
       </nav>
       <div class="nav-actions"><button class="theme-switch" type="button" data-theme-toggle aria-label="Toggle theme"><span class="theme-switch-control"><span class="theme-switch-thumb" data-theme-icon>🌙</span></span></button><a class="btn btn-primary btn-small" href="#booking">Book a Call</a>${window.HDSI18n?.controlHtml?.() || ''}<button class="menu-toggle" data-menu-toggle aria-label="Open menu">☰</button></div>
     </div></header>`;

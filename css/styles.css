@@ -168,6 +168,46 @@ html[data-theme="dark"] .btn-ghost { background: #0a1321; }
   white-space: nowrap;
 }
 .dropdown-menu a:hover { background: rgba(255,47,146,.08); }
+.kiki-nav-trigger {
+  gap: 6px;
+  white-space: nowrap;
+}
+.kiki-nav-icon {
+  width: 22px;
+  height: 22px;
+  flex: 0 0 22px;
+  border: 1px solid rgba(255, 47, 146, .18);
+  border-radius: 7px;
+  object-fit: cover;
+}
+.kiki-dropdown-menu { min-width: 220px; }
+.kiki-dropdown-link {
+  display: flex !important;
+  align-items: center;
+  gap: 10px;
+}
+.kiki-dropdown-link > img {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 6px 16px rgba(255, 47, 146, .14);
+}
+.kiki-dropdown-copy strong,
+.kiki-dropdown-copy small { display: block; }
+.kiki-dropdown-copy strong {
+  color: var(--text);
+  font-size: .86rem;
+  line-height: 1.2;
+}
+.kiki-dropdown-copy small {
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: .7rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
 .nav-actions { display: flex; align-items: center; gap: 10px; }
 .theme-toggle, .menu-toggle {
   width: 43px; height: 43px;
